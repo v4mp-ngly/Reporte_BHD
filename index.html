@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reporte de Riesgo Metabólico - NUMED</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --navy: #001f4d;
+            --lime: #a4c639;
+            --dark-gray: #2c3e50;
+            --light-gray: #ecf0f1;
+            --text-primary: #001f4d;
+            --critical: #d32f2f;
+            --high: #f57c00;
+            --moderate: #fbc02d;
+            --low: #388e3c;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+            color: var(--text-primary);
+            background: #f5f7fa;
+            font-weight: 400;
+        }
+
+        /* HEADER/NAV */
+        header {
+            background: linear-gradient(135deg, var(--navy) 0%, #003d7a 100%);
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0, 31, 77, 0.2);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-weight: 700;
+            font-size: 1.3rem;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .logo-text {
+            color: white;
+        }
+
+        .logo-accent {
+            color: var(--lime);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 2rem;
+            transition: color 0.3s;
+            font-size: 0.95rem;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: var(--lime);
+        }
+
+        /* HERO SECTION */
+        .hero {
+            background: linear-gradient(135deg, var(--navy) 0%, #003d7a 100%);
+            color: white;
+            padding: 6rem 2rem;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            margin: 0 auto;
+            animation: fadeInDown 0.8s ease-out;
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+            font-family: 'Montserrat', sans-serif;
+            letter-spacing: -1px;
+        }
+
+        .hero-subtitle {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .btn {
+            padding: 0.8rem 2rem;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: var(--lime);
+            color: var(--navy);
+        }
+
+        .btn-primary:hover {
+            background: #9bb831;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(164, 198, 57, 0.4);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+
+        .btn-secondary:hover {
+            background: white;
+            color: var(--navy);
+            transform: translateY(-2px);
+        }
+
+        /* METRICS SECTION */
+        .metrics-section {
+            background: white;
+            padding: 4rem 2rem;
+        }
+
+        .section-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.2rem;
+            margin-bottom: 3rem;
+            color: var(--navy);
+            font-weight: 700;
+            font-family: 'Montserrat', sans-serif;
+            letter-spacing: -0.5px;
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .metric-card {
+            background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);
+            padding: 2rem;
+            border-radius: 8px;
+            border-left: 5px solid var(--navy);
+            box-shadow: 0 2px 10px rgba(0, 31, 77, 0.08);
+            transition: all 0.3s;
+            text-align: center;
+        }
+
+        .metric-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 31, 77, 0.15);
+        }
+
+        .metric-value {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin: 1rem 0;
+            background: linear-gradient(135deg, var(--navy) 0%, var(--lime) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .metric-label {
+            font-size: 0.9rem;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* RISK TABLE */
+        .risk-table-section {
+            background: white;
+            padding: 4rem 2rem;
+        }
+
+        .risk-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 2rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .risk-table thead {
+            background: var(--navy);
+            color: white;
+        }
+
+        .risk-table th {
+            padding: 1.2rem;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        .risk-table td {
+            padding: 1rem 1.2rem;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .risk-table tbody tr:hover {
+            background: #f9f9f9;
+        }
+
+        .risk-badge {
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .risk-badge.critical {
+            background: #ffebee;
+            color: var(--critical);
+            border: 1px solid var(--critical);
+        }
+
+        .risk-badge.high {
+            background: #fff3e0;
+            color: var(--high);
+            border: 1px solid var(--high);
+        }
+
+        .risk-badge.moderate {
+            background: #fffde7;
+            color: #f57f17;
+            border: 1px solid #f57f17;
+        }
+
+        .risk-badge.low {
+            background: #e8f5e9;
+            color: var(--low);
+            border: 1px solid var(--low);
+        }
+
+        /* DISTRIBUTION SECTION */
+        .distribution-section {
+            background: linear-gradient(135deg, var(--navy) 0%, #003d7a 100%);
+            color: white;
+            padding: 4rem 2rem;
+        }
+
+        .distribution-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .distribution-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 2rem;
+            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            text-align: center;
+            transition: all 0.3s;
+        }
+
+        .distribution-card:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: translateY(-5px);
+        }
+
+        .distribution-number {
+            font-size: 3rem;
+            font-weight: 700;
+            margin: 1rem 0;
+        }
+
+        .distribution-label {
+            font-size: 0.95rem;
+            opacity: 0.9;
+        }
+
+        .distribution-percent {
+            font-size: 1.3rem;
+            margin-top: 0.5rem;
+            color: var(--lime);
+            font-weight: 600;
+        }
+
+        /* RECOMMENDATIONS SECTION */
+        .recommendations-section {
+            background: white;
+            padding: 4rem 2rem;
+        }
+
+        .recommendation-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .recommendation-card {
+            background: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s;
+        }
+
+        .recommendation-card:hover {
+            box-shadow: 0 5px 20px rgba(0, 31, 77, 0.15);
+            border-color: var(--navy);
+        }
+
+        .recommendation-card h3 {
+            color: var(--navy);
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            letter-spacing: -0.3px;
+        }
+
+        .recommendation-card p {
+            color: #666;
+            line-height: 1.8;
+            font-size: 0.95rem;
+        }
+
+        /* CHARTS */
+        .charts-section {
+            background: white;
+            padding: 4rem 2rem;
+        }
+
+        .chart-container {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-top: 2rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .chart-title {
+            font-size: 1.3rem;
+            color: var(--navy);
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+        }
+
+        .pie-chart {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .pie-legend {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+
+        .legend-color {
+            width: 20px;
+            height: 20px;
+            border-radius: 3px;
+        }
+
+        .legend-text {
+            font-size: 0.95rem;
+        }
+
+        /* FOOTER */
+        footer {
+            background: var(--navy);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-logo {
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+            font-weight: 700;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .footer-text {
+            opacity: 0.8;
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            margin-top: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: var(--lime);
+        }
+
+        /* ANIMATIONS */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in {
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .section-title {
+                font-size: 1.8rem;
+            }
+
+            nav {
+                display: none;
+            }
+
+            .metrics-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .distribution-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* SCROLL REVEAL */
+        .scroll-reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease-out;
+        }
+
+        .scroll-reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">NU</span><span class="logo-accent">–</span><span class="logo-text">MED</span>
+            </div>
+            <nav>
+                <a href="#metricas">Métricas</a>
+                <a href="#distribucion">Distribución</a>
+                <a href="#planes">Planes</a>
+                <a href="#conclusiones">Conclusiones</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Evaluación de Riesgo Metabólico</h1>
+            <p class="hero-subtitle">Programa de Intervención Nutricional para Colaboradores BHD</p>
+            <p style="opacity: 0.9; margin-bottom: 2rem;">122 colaboradores evaluados | Análisis integral de factores de riesgo cardiovascular</p>
+            <div class="cta-buttons">
+                <a href="#metricas" class="btn btn-primary">Ver Análisis Completo</a>
+                <a href="#" class="btn btn-secondary">Descargar PDF</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- METRICS SECTION -->
+    <section id="metricas" class="metrics-section">
+        <div class="section-container">
+            <h2 class="section-title">Situación Actual</h2>
+            <div class="metrics-grid">
+                <div class="metric-card scroll-reveal">
+                    <div class="metric-label">Total Evaluado</div>
+                    <div class="metric-value">122</div>
+                    <p style="color: #999; font-size: 0.9rem;">Colaboradores BHD</p>
+                </div>
+                <div class="metric-card scroll-reveal">
+                    <div class="metric-label">Requiere Intervención</div>
+                    <div class="metric-value">84</div>
+                    <p style="color: #d32f2f; font-size: 0.9rem; font-weight: 600;">68.9% de la población</p>
+                </div>
+                <div class="metric-card scroll-reveal">
+                    <div class="metric-label">Riesgo Crítico</div>
+                    <div class="metric-value" style="color: var(--critical);">37</div>
+                    <p style="color: #999; font-size: 0.9rem;">Intervención inmediata</p>
+                </div>
+                <div class="metric-card scroll-reveal">
+                    <div class="metric-label">Bajo Riesgo</div>
+                    <div class="metric-value" style="color: var(--low);">38</div>
+                    <p style="color: #999; font-size: 0.9rem;">Mantenimiento preventivo</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RISK TABLE -->
+    <section class="risk-table-section">
+        <div class="section-container">
+            <h2 class="section-title">Categorización de Riesgo</h2>
+            <table class="risk-table">
+                <thead>
+                    <tr>
+                        <th>Nivel de Riesgo</th>
+                        <th>Cantidad</th>
+                        <th>Porcentaje</th>
+                        <th>Plan de Acción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="risk-badge critical">🔴 Crítico</span></td>
+                        <td>37</td>
+                        <td>30.3%</td>
+                        <td><strong>Plan Intensivo + Seguimiento Mensual</strong></td>
+                    </tr>
+                    <tr>
+                        <td><span class="risk-badge high">🟠 Alto</span></td>
+                        <td>24</td>
+                        <td>19.7%</td>
+                        <td><strong>Plan Avanzado + Seguimiento Bimensual</strong></td>
+                    </tr>
+                    <tr>
+                        <td><span class="risk-badge moderate">🟡 Moderado</span></td>
+                        <td>23</td>
+                        <td>18.9%</td>
+                        <td><strong>Plan Estándar + Seguimiento Trimestral</strong></td>
+                    </tr>
+                    <tr>
+                        <td><span class="risk-badge low">🟢 Bajo</span></td>
+                        <td>38</td>
+                        <td>31.1%</td>
+                        <td><strong>Mantenimiento + Seguimiento Anual</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- DISTRIBUTION SECTION -->
+    <section id="distribucion" class="distribution-section">
+        <div class="section-container">
+            <h2 class="section-title">Variables de Riesgo Prevalentes</h2>
+            <div class="distribution-grid">
+                <div class="distribution-card scroll-reveal">
+                    <div class="distribution-label">Sobrepeso/Obesidad</div>
+                    <div class="distribution-number">87</div>
+                    <div class="distribution-percent">71.3%</div>
+                </div>
+                <div class="distribution-card scroll-reveal">
+                    <div class="distribution-label">Grasa Corporal Elevada</div>
+                    <div class="distribution-number">64</div>
+                    <div class="distribution-percent">52.5%</div>
+                </div>
+                <div class="distribution-card scroll-reveal">
+                    <div class="distribution-label">Riesgo Abdominal</div>
+                    <div class="distribution-number">59</div>
+                    <div class="distribution-percent">48.4%</div>
+                </div>
+                <div class="distribution-card scroll-reveal">
+                    <div class="distribution-label">Presión Arterial Elevada</div>
+                    <div class="distribution-number">42</div>
+                    <div class="distribution-percent">34.4%</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RECOMMENDATIONS SECTION -->
+    <section id="planes" class="recommendations-section">
+        <div class="section-container">
+            <h2 class="section-title">Planes de Intervención Nutricional</h2>
+            <div class="recommendation-cards">
+                <div class="recommendation-card scroll-reveal">
+                    <h3>🔴 Plan Intensivo (37 colaboradores)</h3>
+                    <p><strong>Riesgo Crítico</strong><br/>Evaluación completa en 2 semanas • Consultas mensuales • Pérdida de peso 1-1.5 kg/semana • Educación semanal • Monitoreo TA quincenal • Posible referencia cardiología</p>
+                </div>
+                <div class="recommendation-card scroll-reveal">
+                    <h3>🟠 Plan Avanzado (24 colaboradores)</h3>
+                    <p><strong>Riesgo Alto</strong><br/>Evaluación en 4 semanas • Consultas bimensuales • Pérdida de peso 0.5-1 kg/semana • Educación quincenal • Talleres de actividad física</p>
+                </div>
+                <div class="recommendation-card scroll-reveal">
+                    <h3>🟡 Plan Estándar (23 colaboradores)</h3>
+                    <p><strong>Riesgo Moderado</strong><br/>Evaluación en 6 semanas • Consultas trimestrales • Programa preventivo • Educación mensual • Actividades de salud</p>
+                </div>
+                <div class="recommendation-card scroll-reveal">
+                    <h3>🟢 Plan Mantenimiento (38 colaboradores)</h3>
+                    <p><strong>Bajo Riesgo</strong><br/>Evaluación anual • Talleres de prevención • Promoción de estilos saludables • Monitoreo anual</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONCLUSIONS SECTION -->
+    <section id="conclusiones" class="recommendations-section">
+        <div class="section-container">
+            <h2 class="section-title">Conclusiones y Recomendaciones</h2>
+            <div style="max-width: 800px; margin: 2rem auto; line-height: 1.8;">
+                <h3 style="color: var(--navy); margin-bottom: 1rem;">1. Prevalencia Crítica</h3>
+                <p style="margin-bottom: 2rem; color: #666;">El 50% de colaboradores (61 de 122) requieren intervención inmediata por riesgo CRÍTICO o ALTO de síndrome metabólico.</p>
+
+                <h3 style="color: var(--navy); margin-bottom: 1rem;">2. Variables Prevalentes</h3>
+                <p style="margin-bottom: 2rem; color: #666;">Sobrepeso/Obesidad (71%), Grasa Elevada (53%), Riesgo Abdominal (48%) e Hipertensión (34%) son los principales factores de riesgo cardiovascular.</p>
+
+                <h3 style="color: var(--navy); margin-bottom: 1rem;">3. Urgencia de Acción</h3>
+                <p style="margin-bottom: 2rem; color: #666;">Sin intervención, los 37 colaboradores en riesgo CRÍTICO podrían experimentar eventos cardiovasculares graves (infarto, ACV, diabetes) en 2-3 años.</p>
+
+                <h3 style="color: var(--navy); margin-bottom: 1rem;">4. Recomendaciones Inmediatas</h3>
+                <ul style="margin-left: 2rem; color: #666; line-height: 2;">
+                    <li>✓ Activar Plan Intensivo con 37 colaboradores en riesgo CRÍTICO</li>
+                    <li>✓ Implementar evaluaciones nutricionales en semana 1</li>
+                    <li>✓ Establecer calendario de seguimientos mensuales/bimensuales</li>
+                    <li>✓ Integrar educación nutricional y ejercicio físico</li>
+                    <li>✓ Evaluar impacto a 3 y 6 meses</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">NU–MED®</div>
+            <p class="footer-text">Clínica de Nutrición - Especialistas en Salud Metabólica</p>
+            <div class="footer-links">
+                <a href="#">Inicio</a>
+                <a href="#">Servicios</a>
+                <a href="#">Contacto</a>
+                <a href="#">Privacidad</a>
+            </div>
+            <p style="margin-top: 2rem; opacity: 0.6; font-size: 0.9rem;">© 2026 NUMED. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Scroll reveal animation
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.scroll-reveal').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Smooth scroll behavior
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
