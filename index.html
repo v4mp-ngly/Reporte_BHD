@@ -44,6 +44,32 @@
 .cardio-fc-analysis p{margin:0 0 14px;color:var(--muted);line-height:1.75}
 .cardio-fc-analysis p:last-child{margin-bottom:0}
 @media(max-width:900px){.cardio-charts,.cardio-fc-layout{grid-template-columns:1fr}.cardio-full{grid-column:auto}}
+
+/* Condicion funcional - narrativa y visual */
+.functional-condition{padding:30px}
+.functional-head{margin-bottom:20px}
+.functional-context,.functional-integrated,.functional-impact{border:1px solid #dce6ee;border-radius:20px;padding:26px 28px;background:#f8fbfc;margin-top:20px}
+.functional-context h3,.functional-integrated h3,.functional-impact h3{margin:0 0 14px;color:var(--navy);font-size:22px}
+.functional-context p,.functional-copy p,.functional-analysis p,.functional-integrated p,.functional-impact p{color:var(--muted);line-height:1.75;margin:0 0 13px}
+.functional-variable{display:grid;grid-template-columns:minmax(0,.9fr) minmax(420px,1.1fr);gap:18px;margin-top:24px;padding-top:24px;border-top:1px solid #e4ebef}
+.functional-copy{padding:6px 8px 0 2px}
+.functional-copy h3{font-size:24px;color:var(--navy);margin:5px 0 14px}
+.variable-kicker{text-transform:uppercase;letter-spacing:.12em;font-size:11px;font-weight:900;color:var(--blue)}
+.functional-variable .chart{margin:0;background:#fff;box-shadow:0 5px 18px rgba(11,53,88,.05)}
+.functional-variable .chart h3{display:none}
+.functional-variable .chart .barrow{grid-template-columns:minmax(120px,.55fr) minmax(180px,1.2fr) minmax(105px,.45fr)}
+.functional-analysis{grid-column:1/-1;border-left:4px solid var(--lime);background:#f7faef;border-radius:0 16px 16px 0;padding:22px 24px}
+.functional-analysis h4{margin:0 0 12px;color:var(--navy);font-size:18px}
+.functional-analysis b,.functional-integrated b{color:var(--navy)}
+.functional-integrated{background:linear-gradient(135deg,#f7fbfd,#f8fbf1);border-color:#d8e5d0}
+.functional-kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:20px 0 24px}
+.functional-kpis div{background:#fff;border:1px solid #dce6ee;border-radius:16px;padding:18px;min-height:142px}
+.functional-kpis strong{display:block;font-size:32px;color:var(--navy);line-height:1}
+.functional-kpis span{display:block;font-size:12px;font-weight:800;color:var(--blue);margin:7px 0 10px}
+.functional-kpis small{display:block;color:var(--muted);line-height:1.4}
+.functional-impact{background:#fff;border-left:5px solid var(--blue)}
+@media(max-width:900px){.functional-variable{grid-template-columns:1fr}.functional-kpis{grid-template-columns:1fr 1fr}.functional-variable .chart .barrow{grid-template-columns:110px 1fr 100px}}
+@media(max-width:560px){.functional-kpis{grid-template-columns:1fr}.functional-condition{padding:20px}.functional-context,.functional-integrated,.functional-impact{padding:20px}.functional-variable .chart .barrow{grid-template-columns:95px 1fr 82px}}
 </style>
 </head>
 <body>
@@ -184,9 +210,6 @@
 <div class="section-head">
 <div class="eyebrow" style="color:var(--blue)">01 · Análisis estadístico</div>
 </div>
-
-
-
 <div class="condition">
 <div class="condition-head">
 <span>
@@ -783,17 +806,23 @@
 <p>La integración de la condición metabólica con las condiciones cardiovascular y funcional permitirá identificar en qué personas coinciden varias dimensiones alteradas. De esta manera, BHD podrá orientar sus acciones de bienestar hacia las necesidades observadas y priorizar a la población que presenta una mayor carga conjunta de hallazgos.</p>
 </article>
 </div>
-</div><div class="condition">
-<div class="condition-head">
-<span>
-       Condición funcional
-      </span>
-<p>
-       Integra flexibilidad, fuerza y resistencia en flexiones, abdominales y sentadillas.
-      </p>
+</div><div class="condition functional-condition">
+<div class="condition-head functional-head">
+<span>Condición funcional</span>
+<p>Cinco variables para observar movilidad, fuerza muscular y resistencia dentro del protocolo del Functional Health Test.</p>
 </div>
-<div class="charts">
-<article class="chart">
+<article class="functional-context">
+<h3>¿Qué evalúa la condición funcional?</h3>
+<p>La condición funcional del Functional Health Test integra cinco variables complementarias: flexibilidad, fuerza muscular, resistencia en flexiones, resistencia abdominal y resistencia en sentadillas. Estas pruebas permiten observar diferentes componentes de la capacidad física de los colaboradores, incluyendo la movilidad, la capacidad para generar fuerza y la posibilidad de sostener o repetir determinados patrones de movimiento.</p>
+<p>La interpretación conjunta de estas variables complementa los resultados metabólicos y cardiovasculares. Una persona puede presentar indicadores clínicos favorables y, al mismo tiempo, mostrar oportunidades de mejora en su movilidad, fuerza o resistencia. Del mismo modo, los resultados de una prueba funcional no deben interpretarse de manera aislada ni como una evaluación directa de la capacidad laboral.</p>
+<p>Las clasificaciones obtenidas representan el desempeño de cada participante durante el protocolo aplicado. No constituyen por sí solas un diagnóstico de lesión, enfermedad musculoesquelética, discapacidad o falta de aptitud para desempeñar sus funciones laborales.</p>
+</article>
+<div class="functional-variable">
+<div class="functional-copy">
+<div class="variable-kicker">Variable funcional 01</div><h3>Flexibilidad</h3>
+<p>La flexibilidad representa la capacidad de alcanzar una determinada amplitud de movimiento durante la prueba aplicada. Esta variable aporta información sobre la movilidad y debe interpretarse según el protocolo del Functional Health Test, considerando que el resultado de una sola prueba no describe por completo la movilidad de todas las articulaciones o segmentos corporales.</p>
+<p>Una movilidad adecuada facilita la realización de diferentes actividades físicas y movimientos cotidianos. No obstante, una clasificación baja de flexibilidad no permite concluir, por sí sola, que exista una lesión o condición musculoesquelética.</p>
+</div><article class="chart">
 <h3>
         Flexibilidad
        </h3>
@@ -858,7 +887,17 @@
 </b>
 </div>
 </article>
-<article class="chart">
+<article class="functional-analysis"><h4>¿Qué muestran los resultados de flexibilidad?</h4>
+<p>La categoría con mayor concentración fue <b>Muy pobre: 51.7% —62 colaboradores—</b>. Adicionalmente, el <b>22.5% —27 colaboradores—</b> se ubicó en la categoría Pobre.</p>
+<p>Al integrar ambas clasificaciones, el <b>74.2% —89 colaboradores—</b> presentó un resultado de flexibilidad Muy pobre o Pobre. Esto convierte la flexibilidad en una de las principales áreas de oportunidad dentro de la condición funcional.</p>
+<p>Por otra parte, el <b>24.2% —29 colaboradores—</b> obtuvo una clasificación Promedio y el <b>1.7% —2 colaboradores—</b> se ubicó en Excelente.</p>
+<p>La distribución evidencia que las oportunidades relacionadas con movilidad no se concentran en un grupo pequeño, sino que están presentes en una proporción amplia de la población evaluada. Este resultado justifica considerar acciones progresivas de movilidad, educación sobre el movimiento y seguimiento funcional.</p>
+</article>
+</div>
+<div class="functional-variable">
+<div class="functional-copy"><div class="variable-kicker">Variable funcional 02</div><h3>Fuerza muscular</h3>
+<p>La fuerza muscular representa la capacidad de generar fuerza durante la prueba establecida por el Functional Health Test. Su evaluación complementa las pruebas de resistencia, ya que una persona puede producir fuerza de manera adecuada en un esfuerzo determinado y presentar un comportamiento diferente al repetir o sostener movimientos durante un período mayor.</p>
+</div><article class="chart">
 <h3>
         Fuerza
        </h3>
@@ -908,7 +947,17 @@
 </b>
 </div>
 </article>
-<article class="chart">
+<article class="functional-analysis"><h4>¿Qué muestran los resultados de fuerza?</h4>
+<p>La categoría con mayor concentración fue <b>Débil: 57.4% —70 colaboradores—</b>.</p>
+<p>El <b>37.7% —46 colaboradores—</b> presentó una clasificación Normal y el <b>4.9% —6 colaboradores—</b> fue clasificado como Fuerte.</p>
+<p>El hecho de que más de la mitad de la población haya obtenido una clasificación Débil señala una oportunidad importante para incorporar estrategias de fortalecimiento progresivo y adaptado a las capacidades individuales.</p>
+<p>Este hallazgo no debe interpretarse como incapacidad para realizar las tareas habituales. Indica que, según los parámetros de la prueba aplicada, existe una proporción relevante de participantes que puede beneficiarse de acciones orientadas a mejorar o mantener la fuerza muscular.</p>
+</article>
+</div>
+<div class="functional-variable">
+<div class="functional-copy"><div class="variable-kicker">Variable funcional 03</div><h3>Resistencia en flexiones</h3>
+<p>La prueba de resistencia en flexiones evalúa la capacidad de repetir el patrón de movimiento establecido durante el protocolo. Su resultado aporta una lectura específica de resistencia muscular y debe analizarse junto con la fuerza, la flexibilidad y las demás pruebas funcionales.</p>
+</div><article class="chart">
 <h3>
         Resistencia en flexiones
        </h3>
@@ -1003,7 +1052,17 @@
 </b>
 </div>
 </article>
-<article class="chart">
+<article class="functional-analysis"><h4>¿Qué muestran los resultados de resistencia en flexiones?</h4>
+<p>La categoría con mayor concentración fue <b>Promedio: 44.0% —48 colaboradores—</b>.</p>
+<p>El <b>17.4% —19 colaboradores—</b> se ubicó Sobre el promedio, el <b>10.1% —11 colaboradores—</b> en Bueno y el <b>5.5% —6 colaboradores—</b> en Excelente. En conjunto, el <b>77.1% —84 colaboradores—</b> obtuvo una clasificación Promedio o superior.</p>
+<p>Por otra parte, el <b>18.3% —20 colaboradores—</b> se ubicó Debajo del promedio y el <b>4.6% —5 colaboradores—</b> en Malo. Al integrar ambas categorías, el <b>22.9% —25 colaboradores—</b> presentó un resultado desfavorable en esta prueba.</p>
+<p>La distribución muestra un comportamiento predominantemente favorable o intermedio. Sin embargo, existe un grupo específico que requiere orientación y fortalecimiento progresivo, particularmente cuando este resultado coincide con una clasificación Débil en fuerza o con alteraciones en otras pruebas de resistencia.</p>
+</article>
+</div>
+<div class="functional-variable">
+<div class="functional-copy"><div class="variable-kicker">Variable funcional 04</div><h3>Resistencia abdominal</h3>
+<p>La resistencia abdominal evalúa la capacidad de repetir el movimiento establecido para esta prueba. Aporta información sobre la resistencia muscular del segmento evaluado y complementa la lectura de la fuerza y de los demás patrones funcionales.</p>
+</div><article class="chart">
 <h3>
         Resistencia abdominal
        </h3>
@@ -1113,7 +1172,17 @@
 </b>
 </div>
 </article>
-<article class="chart">
+<article class="functional-analysis"><h4>¿Qué muestran los resultados de resistencia abdominal?</h4>
+<p>El <b>25.2% —29 colaboradores—</b> obtuvo una clasificación Mala y el <b>23.5% —27 colaboradores—</b> una clasificación Muy mala. Adicionalmente, el <b>15.7% —18 colaboradores—</b> se ubicó Debajo del promedio.</p>
+<p>Al integrar estas tres categorías, el <b>64.3% —74 colaboradores—</b> presentó un resultado desfavorable en la prueba de resistencia abdominal. Esta fue la prueba de resistencia con mayor concentración de clasificaciones por debajo del nivel Promedio.</p>
+<p>En contraste, el <b>16.5% —19 colaboradores—</b> se ubicó en Promedio, el <b>6.1% —7 colaboradores—</b> Sobre el promedio, el <b>12.2% —14 colaboradores—</b> en Bueno y el <b>0.9% —1 colaborador—</b> en Excelente.</p>
+<p>Los resultados señalan una oportunidad relevante para incorporar ejercicios progresivos de fortalecimiento y resistencia, ajustados a las características y condiciones individuales de los colaboradores.</p>
+</article>
+</div>
+<div class="functional-variable">
+<div class="functional-copy"><div class="variable-kicker">Variable funcional 05</div><h3>Resistencia en sentadillas</h3>
+<p>La resistencia en sentadillas evalúa la capacidad de repetir el patrón de movimiento establecido durante la prueba. Su lectura complementa las demás mediciones funcionales y permite identificar diferencias entre el desempeño obtenido en distintos tipos de movimiento.</p>
+</div><article class="chart">
 <h3>
         Resistencia en sentadillas
        </h3>
@@ -1223,25 +1292,37 @@
 </b>
 </div>
 </article>
-</div>
-<div class="impact">
-<article>
-<b>
-        ¿Cómo impacta a la población?
-       </b>
-<p>
-        La condición funcional muestra cómo se encuentra la capacidad física de la población. Resultados desfavorables en movilidad, fuerza o resistencia pueden orientar programas progresivos de acondicionamiento y hábitos de actividad física.
-       </p>
-</article>
-<article>
-<b>
-        ¿Cómo puede impactar a la empresa?
-       </b>
-<p>
-        Para la empresa, esta dimensión amplía el panorama más allá de los indicadores metabólicos: permite diseñar iniciativas de bienestar que consideren movilidad, fuerza y resistencia, y medir su evolución en futuras jornadas.
-       </p>
+<article class="functional-analysis"><h4>¿Qué muestran los resultados de resistencia en sentadillas?</h4>
+<p>La categoría con mayor concentración fue <b>Excelente: 46.2% —55 colaboradores—</b>.</p>
+<p>El <b>21.8% —26 colaboradores—</b> se ubicó en Bueno, el <b>10.9% —13 colaboradores—</b> Sobre el promedio y el <b>8.4% —10 colaboradores—</b> en Promedio. En conjunto, el <b>87.4% —104 colaboradores—</b> obtuvo una clasificación Promedio o superior.</p>
+<p>Por otra parte, el <b>5.0% —6 colaboradores—</b> se ubicó Debajo del promedio, el <b>5.0% —6 colaboradores—</b> en Malo y el <b>2.5% —3 colaboradores—</b> en Muy malo. Estas tres categorías representan conjuntamente el <b>12.6% —15 colaboradores—</b>.</p>
+<p>La resistencia en sentadillas presentó el comportamiento más favorable entre las pruebas funcionales. Este resultado constituye una fortaleza relativa de la población y debe considerarse tanto para mantener las capacidades observadas como para apoyar programas progresivos que integren movilidad, fuerza y resistencia.</p>
 </article>
 </div>
+<article class="functional-integrated">
+<div class="variable-kicker">Lectura integrada</div><h3>¿Qué revela la lectura integrada de las cinco variables?</h3>
+<p>La condición funcional presenta un comportamiento heterogéneo. Las mayores oportunidades se concentran en flexibilidad, fuerza muscular y resistencia abdominal, mientras que la resistencia en sentadillas y la resistencia en flexiones muestran distribuciones comparativamente más favorables.</p>
+<div class="functional-kpis">
+<div><strong>92.6%</strong><span>113 colaboradores</span><small>Al menos una clasificación desfavorable</small></div>
+<div><strong>71.3%</strong><span>87 colaboradores</span><small>Dos o más variables desfavorables</small></div>
+<div><strong>43.4%</strong><span>53 colaboradores</span><small>Tres o más variables desfavorables</small></div>
+<div><strong>32.0%</strong><span>39 colaboradores</span><small>Flexibilidad + fuerza + resistencia abdominal</small></div>
+</div>
+<p>Al analizar conjuntamente las pruebas realizadas, el <b>92.6% —113 colaboradores—</b> presentó al menos una clasificación desfavorable en alguna de las variables funcionales evaluadas.</p>
+<p>Este porcentaje no significa que el 92.6% de la población tenga una incapacidad funcional. Indica que, dentro de las pruebas que cada persona realizó, se identificó al menos un componente con oportunidad de mejora.</p>
+<p>La coexistencia de resultados también es relevante: el <b>71.3% —87 colaboradores—</b> presentó dos o más variables funcionales con clasificaciones desfavorables y el <b>43.4% —53 colaboradores—</b> presentó tres o más.</p>
+<p>Adicionalmente, el <b>32.0% de toda la población —39 colaboradores—</b> presentó simultáneamente flexibilidad Muy pobre o Pobre, fuerza Débil y resistencia abdominal Debajo del promedio, Mala o Muy mala.</p>
+<p>Esta combinación representa uno de los patrones funcionales más relevantes de la jornada. Su presencia señala que el abordaje no debe limitarse a trabajar una sola capacidad, sino considerar programas que integren movilidad, fortalecimiento y resistencia de manera progresiva.</p>
+<p>Los resultados también demuestran que una persona puede presentar desempeños diferentes según la prueba. Por ejemplo, una clasificación favorable en sentadillas no descarta oportunidades en flexibilidad, fuerza o resistencia abdominal. Por esta razón, la condición funcional debe interpretarse como una dimensión integrada y no a partir de una única medición.</p>
+</article>
+<article class="functional-impact">
+<h3>¿Cómo impacta la condición funcional en la población?</h3>
+<p>La condición funcional aporta información sobre cómo los colaboradores responden a diferentes demandas físicas dentro del protocolo de evaluación. Los hallazgos permiten identificar tanto capacidades favorables que deben mantenerse como componentes que pueden beneficiarse de orientación y entrenamiento progresivo.</p>
+<p>Los colaboradores con resultados Promedio o superiores en todas las pruebas realizadas representan una oportunidad para mantener sus capacidades mediante actividad física regular, movilidad y fortalecimiento preventivo.</p>
+<p>Las personas con una sola clasificación desfavorable pueden beneficiarse de intervenciones dirigidas al componente específico identificado. Una alteración aislada de flexibilidad, por ejemplo, no requiere necesariamente el mismo abordaje que una clasificación Débil en fuerza o un resultado bajo de resistencia abdominal.</p>
+<p>Cuando coinciden varias clasificaciones desfavorables, resulta conveniente realizar una orientación más integral, considerando movilidad, fuerza y resistencia. Las recomendaciones deben adaptarse a las capacidades, antecedentes y condiciones de cada persona y progresar de manera gradual. Las guías de actividad física para adultos recomiendan combinar movimiento aeróbico con actividades de fortalecimiento muscular y ajustar la práctica a las capacidades individuales.</p>
+<p>La intervención no debe perseguir únicamente un mejor resultado en la prueba. Su propósito debe ser favorecer una mayor capacidad para moverse, realizar actividad física y mantener las capacidades funcionales a lo largo del tiempo.</p>
+</article>
 </div></section>
 <section id="significado">
 <div class="section-head">
