@@ -14,16 +14,16 @@
 
 .chartbase{margin-top:12px;padding-top:10px;border-top:1px solid #edf2f4;color:var(--muted);font-size:11px;font-weight:700}.barrow b{font-size:12px}.barrow b small{display:block;font-size:9px;font-weight:600;margin-top:2px}.icrcard strong{font-size:46px}.icrcard b{display:block;font-size:17px;margin:3px 0 18px}.exec-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:22px;margin-top:22px}.exec-hero{background:linear-gradient(135deg,#f8fbf3,#fff);border:1px solid #d7e4a8;border-radius:24px;padding:30px}.exec-hero .big{font-size:clamp(48px,7vw,82px);font-weight:950;color:#0b3558;line-height:.95;margin:10px 0}.exec-side{display:grid;grid-template-columns:1fr 1fr;gap:14px}.exec-kpi{border-radius:20px;padding:22px;color:#fff;min-height:140px}.exec-kpi b{font-size:34px;display:block}.exec-kpi small{font-size:14px;opacity:.92}.k-red{background:#c9352b}.k-amber{background:#df9f16}.k-green{background:#2bad69}.k-blue{background:#15557e}.story-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:20px}.story-card{background:#fff;border:1px solid #dce6ee;border-radius:18px;padding:22px}.story-card b{display:block;color:#0b3558;font-size:18px;margin-bottom:8px}.flow{display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap;margin:24px 0}.flow span{background:#fff;border:1px solid #d9e4ec;border-radius:999px;padding:11px 16px;font-weight:850;color:#0b3558}.flow i{font-style:normal;color:#79a52c;font-size:22px;font-weight:900}.combo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:20px}.combo{background:#fff;border:1px solid #dce6ee;border-radius:16px;padding:18px}.combo strong{display:block;font-size:26px;color:#0b3558}.combo em{font-style:normal;color:#6b7f92;font-size:13px}.phase-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:22px 0}.phase{border-radius:18px;padding:22px;border:1px solid #dce6ee;background:#fff}.phase .tag{font-weight:950;color:#2781a8;letter-spacing:.08em;text-transform:uppercase}.phase h3{margin:6px 0 10px;color:#0b3558}.action-map{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:18px}.action-map article{border-radius:18px;padding:20px;background:#fff;border:1px solid #dce6ee}.action-map b{color:#0b3558}.callout{margin-top:22px;padding:22px;border-left:5px solid #a8cf3a;background:#f7faef;border-radius:0 16px 16px 0}.section-number{font-size:12px;font-weight:950;letter-spacing:.16em;text-transform:uppercase;color:#2781a8}.muted-note{font-size:13px;color:#718399;margin-top:12px}@media(max-width:900px){.exec-grid,.story-grid,.combo-grid,.phase-grid,.action-map{grid-template-columns:1fr}.exec-side{grid-template-columns:1fr 1fr}}@media(max-width:560px){.exec-side{grid-template-columns:1fr}}
 /* Introduccion editorial */
-.intro-editorial{position:relative;padding:54px 28px 38px;background:linear-gradient(135deg,#f8fcff 0%,#eef8fd 100%);overflow:hidden}
+.intro-editorial{position:relative;padding:54px 28px 38px;background:linear-gradient(135deg,#f7fbfd 0%,#eef7f8 100%);overflow:hidden;border-top:5px solid var(--lime)}
 .intro-editorial:before{content:"";position:absolute;right:-90px;top:-120px;width:430px;height:250px;border-radius:50%;background:rgba(40,126,170,.06);transform:rotate(18deg)}
-.intro-title{font-size:42px;line-height:1;margin:0 0 34px;color:#123d70;letter-spacing:.02em;text-transform:uppercase;position:relative}
-.intro-title:after{content:"";display:block;width:58px;height:4px;background:#1eafba;border-radius:5px;margin-top:17px}
+.intro-title{font-size:42px;line-height:1;margin:0 0 34px;color:var(--navy);letter-spacing:.02em;text-transform:uppercase;position:relative}
+.intro-title:after{content:"";display:block;width:58px;height:4px;background:linear-gradient(90deg,var(--blue),var(--lime));border-radius:5px;margin-top:17px}
 .intro-stack{display:grid;gap:8px;position:relative}
 .intro-card{display:grid;grid-template-columns:190px 1px 1fr;align-items:center;gap:36px;background:#fff;border:1px solid #e6eef3;border-radius:12px;padding:28px 34px;box-shadow:0 5px 18px rgba(11,53,88,.06)}
-.intro-icon{width:116px;height:116px;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:auto;background:linear-gradient(145deg,#edfaff,#dff3f7);color:#17a6b5;font-size:48px;font-weight:900}
-.intro-rule{height:100%;min-height:105px;background:#24b8c1}
+.intro-icon{width:116px;height:116px;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:auto;background:linear-gradient(145deg,#edf7fb,#f2f8df);color:var(--blue);border:2px solid rgba(168,202,58,.55);font-size:48px;font-weight:900}
+.intro-rule{height:100%;min-height:105px;background:linear-gradient(180deg,var(--blue),var(--lime))}
 .intro-copy{font-size:16.5px;line-height:1.62;color:#132b48;margin:0;max-width:920px}
-.intro-copy b{color:#0c478e;font-weight:800}
+.intro-copy b{color:var(--blue);font-weight:800}
 @media(max-width:760px){.intro-title{font-size:34px}.intro-card{grid-template-columns:70px 1fr;gap:18px;padding:22px}.intro-icon{width:68px;height:68px;font-size:30px}.intro-rule{display:none}.intro-copy{font-size:15px}}
 @media print{.intro-editorial{background:#f7fbfd!important}.intro-card{break-inside:avoid;box-shadow:none}}
   
@@ -35,9 +35,14 @@
 .cardio-charts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:20px}
 .cardio-charts .chart{height:100%}
 .cardio-full{grid-column:1/-1}
-.cardio-fc-layout{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(320px,.55fr);gap:18px;align-items:stretch;margin-top:20px}
+.cardio-fc-layout{display:grid;grid-template-columns:1fr;gap:18px;margin-top:20px}
 .cardio-fc-layout .cardio-context{margin:0}
-.cardio-fc-layout .chart{margin:0;height:100%}
+.cardio-fc-layout .chart{margin:0;width:100%}
+.cardio-fc-layout .chart .barrow{grid-template-columns:minmax(150px,.35fr) minmax(320px,1.5fr) minmax(150px,.35fr)}
+.cardio-fc-analysis{margin-top:18px;padding:26px 28px;border:1px solid var(--line);border-radius:22px;background:#fff}
+.cardio-fc-analysis h3{margin:0 0 14px;color:var(--navy);font-size:22px}
+.cardio-fc-analysis p{margin:0 0 14px;color:var(--muted);line-height:1.75}
+.cardio-fc-analysis p:last-child{margin-bottom:0}
 @media(max-width:900px){.cardio-charts,.cardio-fc-layout{grid-template-columns:1fr}.cardio-full{grid-column:auto}}
 </style>
 </head>
@@ -441,6 +446,14 @@
 </b>
 </div>
 </article>
+<div class="cardio-fc-analysis">
+<h3>Lectura de los resultados de frecuencia cardíaca</h3>
+<p>En la evaluación de la frecuencia cardíaca en reposo, un indicador clave de salud cardiovascular y condición física, se observó un panorama globalmente positivo en la población evaluada. El <b>82%</b> de la población se encontró en buen estado, reflejando una adecuada capacidad de adaptación cardiovascular en la mayoría de los participantes. Solo un <b>8%</b> de los colaboradores presentó una frecuencia cardíaca deficiente, asociada al sedentarismo, la baja aptitud física y el estrés, lo que sugiere un riesgo potencial si no se monitorea y corrige.</p>
+<p>Este resultado evidencia que la condición cardiovascular básica de la población no constituye un factor de riesgo prioritario y, por el contrario, representa una fortaleza para la empresa, probablemente como resultado de prácticas ya implementadas. Este hallazgo permite orientar los recursos hacia otras áreas donde los riesgos son más significativos.</p>
+<p>Pese a lo anterior descrito, se visualizaron algunos patrones diferenciales que conviene considerar. Los hombres presentaron mayor proporción de cifras deficientes que las mujeres, con tendencia a valores extremos, mientras que las mujeres se concentraron principalmente en rangos normales y buenos, mostrando una mejor adaptación cardiovascular general.</p>
+<p>Por grupo etario, los colaboradores menores de 30 años mostraron ya algunas cifras elevadas, indicando que en algunos casos las alteraciones pueden aparecer tempranamente. En el grupo de 46 a 60 años, se identificaron tanto valores elevados como bradicardias (&lt;60 lpm), lo que refleja una regulación cardiovascular menos eficiente y mayor dispersión de resultados. Finalmente, los colaboradores de 60 años o más presentaron un predominio de valores bajos y menor proporción en los rangos óptimos, como parte del deterioro funcional asociado a la edad.</p>
+<p>En resumen, la mayoría de los colaboradores mantiene una frecuencia cardíaca en rangos saludables, lo que constituye una ventaja para la empresa. Sin embargo, se identifican subgrupos, particularmente hombres y mayores de 46 años, donde la proporción de valores deficientes es mayor y amerita seguimiento para garantizar que esta fortaleza se mantenga a largo plazo.</p>
+</div>
 </div>
 <div class="impact">
 <article>
