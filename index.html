@@ -110,8 +110,52 @@
 
 /* Listado individual ICR */
 .collaborators-section{margin-top:54px}.collab-summary{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:22px 0}.collab-summary article{background:#f7fafb;border:1px solid #dce6ee;border-radius:16px;padding:18px}.collab-summary strong{display:block;font-size:28px;color:var(--blue)}.collab-summary span{font-size:13px;color:#64788d;font-weight:700}.collab-controls{display:grid;grid-template-columns:1fr 240px;gap:12px;margin:18px 0}.collab-controls input,.collab-controls select{width:100%;border:1px solid #cfdce5;border-radius:12px;padding:12px 14px;font:inherit;background:#fff;color:#17324d}.collab-table-wrap{overflow:auto;border:1px solid #dce6ee;border-radius:18px;background:#fff;max-height:680px}.collab-table{width:100%;border-collapse:collapse;min-width:1180px;font-size:12px}.collab-table th{position:sticky;top:0;background:#0b3558;color:#fff;text-align:left;padding:12px;z-index:1}.collab-table td{padding:11px 12px;border-bottom:1px solid #e8eef2;vertical-align:top;line-height:1.45}.collab-table tbody tr:nth-child(even){background:#f9fbfc}.status-pill{display:inline-block;padding:5px 9px;border-radius:999px;font-size:11px;font-weight:800;white-space:nowrap}.status-pill.safe{background:#e8f5ee;color:#23734b}.status-pill.average{background:#fff4d8;color:#936600}.status-pill.critical{background:#fde9e7;color:#a63d32}.status-pill.pending{background:#eef1f4;color:#5c6875}.collab-note{font-size:12px;color:#687c90;margin-top:12px}@media(max-width:760px){.collab-summary{grid-template-columns:1fr}.collab-controls{grid-template-columns:1fr}}@media print{.collab-controls{display:none}.collab-table-wrap{max-height:none;overflow:visible}.collab-table th{position:static}.collab-table{font-size:9px;min-width:0}.collab-table th,.collab-table td{padding:6px}.collaborators-section{break-before:page}}
+
+/* ===== NUMED 2026 · Modern visual layer ===== */
+html{scroll-behavior:smooth} body{background:radial-gradient(circle at 8% 8%,rgba(168,202,58,.08),transparent 22%),radial-gradient(circle at 92% 18%,rgba(40,126,170,.08),transparent 25%),var(--bg)}
+header{backdrop-filter:blur(18px);background:rgba(255,255,255,.92)}
+.btn{transition:transform .25s ease,box-shadow .25s ease,background .25s ease;box-shadow:0 8px 20px rgba(11,53,88,.14)}.btn:hover{transform:translateY(-2px);box-shadow:0 12px 26px rgba(11,53,88,.22);background:#124c76}
+.hero{position:relative;overflow:hidden;background:linear-gradient(125deg,#082b49 0%,#0b466d 58%,#287eaa 100%)}.hero:after{content:"";position:absolute;width:420px;height:420px;border:1px solid rgba(255,255,255,.12);border-radius:50%;right:-100px;top:-210px;box-shadow:0 0 0 55px rgba(255,255,255,.025),0 0 0 110px rgba(168,202,58,.035)}
+.condition,.intro,.icrbox{box-shadow:0 18px 55px rgba(11,53,88,.06)}
+.metabolic-modern{position:relative;overflow:hidden;border:1px solid rgba(40,126,170,.16);background:linear-gradient(180deg,#fff 0%,#fbfdfe 100%)}
+.metabolic-modern:before{content:"";position:absolute;top:0;left:0;right:0;height:5px;background:linear-gradient(90deg,var(--navy),var(--blue) 55%,var(--lime))}
+.metabolic-modern .condition-head{padding:8px 4px 20px}.metabolic-modern .condition-head span{font-size:28px;letter-spacing:-.03em}
+.metabolic-modern .charts{grid-template-columns:repeat(12,1fr);gap:20px}.metabolic-modern .metric-chart{grid-column:span 12;padding:26px 28px;border-radius:24px;background:linear-gradient(145deg,#fff,#f7fbfc);border:1px solid #dce8ed;box-shadow:0 14px 34px rgba(11,53,88,.075);transition:transform .3s ease,box-shadow .3s ease,border-color .3s ease;position:relative;overflow:hidden}
+.metabolic-modern .metric-chart:hover{transform:translateY(-4px);box-shadow:0 20px 42px rgba(11,53,88,.12);border-color:rgba(40,126,170,.35)}
+.metabolic-modern .metric-chart:after{content:attr(data-metric);position:absolute;right:18px;top:10px;font-size:46px;font-weight:900;letter-spacing:-.06em;color:rgba(40,126,170,.045);pointer-events:none;white-space:nowrap}
+.metabolic-modern .metric-chart h3{font-size:21px;color:var(--navy);padding-bottom:15px;margin-bottom:18px;border-bottom:1px solid #e7eef2;position:relative}.metabolic-modern .metric-chart h3:after{content:"";position:absolute;left:0;bottom:-1px;width:72px;height:3px;border-radius:5px;background:linear-gradient(90deg,var(--blue),var(--lime))}
+.metabolic-modern .metric-chart .barrow{grid-template-columns:minmax(145px,.42fr) minmax(300px,1.5fr) minmax(140px,.38fr);gap:14px;margin:14px 0;font-size:12px}.metabolic-modern .metric-chart .barrow>span{font-weight:700;color:#34546d}.metabolic-modern .metric-chart .track{height:15px;background:#eaf0f3;box-shadow:inset 0 1px 2px rgba(11,53,88,.06)}.metabolic-modern .metric-chart .track i{width:var(--target-width)!important;background:linear-gradient(90deg,#287eaa 0%,#48a0bd 55%,#a8ca3a 100%);box-shadow:0 2px 8px rgba(40,126,170,.22);transition:width .8s cubic-bezier(.2,.8,.2,1)}.metabolic-modern .metric-chart.is-visible .track i{width:var(--target-width)!important}.metabolic-modern .metric-chart .barrow b{font-size:15px;color:var(--navy)}.metabolic-modern .metric-chart .barrow small{font-size:10px;margin-top:3px}
+.metabolic-modern .metabolic-reading{border:0!important;background:linear-gradient(135deg,#f2f8fa,#f8fbef)!important;border-radius:22px!important;padding:26px 28px!important;box-shadow:none!important}.metabolic-modern .metabolic-reading h3{font-size:20px;color:var(--navy);margin-bottom:12px}.metabolic-modern .metabolic-reading p{line-height:1.75;color:#526d82}.metabolic-modern .metabolic-reading b{color:#174f74}.metabolic-modern .insight-card{position:relative}.metabolic-modern .insight-card:before{content:"INSIGHT";display:inline-flex;padding:6px 10px;border-radius:999px;background:#e6f1f5;color:var(--blue);font-size:9px;font-weight:900;letter-spacing:.13em;margin-bottom:12px}
+.metabolic-modern .impact article{border:1px solid #e0eaee;background:linear-gradient(145deg,#f8fbfc,#fff);transition:transform .25s ease,box-shadow .25s ease}.metabolic-modern .impact article:hover{transform:translateY(-3px);box-shadow:0 12px 28px rgba(11,53,88,.07)}
+.reveal-numed{opacity:1;transform:none}.metric-chart,.recommendation-card,.icrcard{animation:numedEnter .55s ease both}@keyframes numedEnter{from{opacity:.35;transform:translateY(10px)}to{opacity:1;transform:none}}
+@media(max-width:900px){.metabolic-modern .metric-chart .barrow{grid-template-columns:120px 1fr 110px}.metabolic-modern .metric-chart:after{font-size:30px}.metabolic-modern .charts{display:block}.metabolic-modern .charts>article{margin-bottom:16px}}
+@media(max-width:620px){.metabolic-modern .metric-chart{padding:20px}.metabolic-modern .metric-chart .barrow{grid-template-columns:1fr 82px}.metabolic-modern .metric-chart .barrow .track{grid-column:1/-1;grid-row:2}.metabolic-modern .metric-chart .barrow b{grid-column:2;grid-row:1}.metabolic-modern .metric-chart:after{display:none}}
+@media print{.reveal-numed{opacity:1!important;transform:none!important}.metabolic-modern .metric-chart{box-shadow:none;break-inside:avoid}.metabolic-modern .metric-chart .track i{width:var(--target-width)!important}.metabolic-modern .metric-chart:hover,.metabolic-modern .impact article:hover{transform:none}.hero:after{display:none}}
+
+/* ===== NUMED Premium final visual refresh ===== */
+:root{--surface:#ffffff;--surface2:#f7fafb;--line:#dbe7ed;--shadow:0 18px 50px rgba(11,53,88,.08)}
+main{overflow:hidden} section{position:relative}
+.section-head{max-width:1180px;margin-left:auto;margin-right:auto}.section-head h2{letter-spacing:-.035em;font-size:clamp(30px,4vw,46px);line-height:1.08}.section-head .eyebrow{display:inline-flex;align-items:center;gap:8px;padding:7px 11px;border-radius:999px;background:#eaf5f7}
+.condition{border-radius:28px;border-color:var(--line);box-shadow:var(--shadow);padding:34px}.condition-head{align-items:center}.condition-head span{font-size:30px;letter-spacing:-.035em}.chart{border-radius:20px;background:linear-gradient(145deg,#fff,#f8fbfc);box-shadow:0 10px 30px rgba(11,53,88,.045)}
+.track{height:14px}.track i{background:linear-gradient(90deg,#1e7fa9,#58a7b7 58%,#a8ca3a)}
+.cardio-context,.functional-context,.functional-integrated,.functional-impact,.functional-analysis,.recommendation-card,.icr-kpi{box-shadow:0 10px 30px rgba(11,53,88,.045)}
+.functional-variable{grid-template-columns:minmax(300px,.82fr) minmax(520px,1.18fr);gap:30px;align-items:center;padding:32px 0}.functional-copy{padding:10px 8px}.functional-copy h3{font-size:29px;letter-spacing:-.025em}.functional-variable .chart{padding:26px}.functional-variable .chart .barrow{margin:13px 0}.functional-analysis{margin-top:6px}
+.metabolic-modern .metric-chart{padding:30px 32px}.metabolic-modern .metric-chart h3{font-size:24px}.metabolic-modern .metric-chart .barrow{margin:16px 0}.metabolic-modern .metric-chart .track{height:16px}
+.icr-section{background:linear-gradient(180deg,#eef6f8 0%,#f8fafb 100%);padding-top:64px;padding-bottom:64px}.icr-kpis{grid-template-columns:repeat(3,1fr);gap:18px}.icr-kpi{padding:26px;border-radius:22px}.icr-kpi strong{font-size:46px}.icr-kpi.safe{background:linear-gradient(145deg,#fff,#edf8f2)}.icr-kpi.average{background:linear-gradient(145deg,#fff,#fff8e9)}.icr-kpi.critical{background:linear-gradient(145deg,#fff,#fff0ee)}
+.icr-table-wrap{box-shadow:0 14px 38px rgba(11,53,88,.06);border-radius:22px}.icr-table th{background:#0b3558;color:#fff}.icr-table tbody tr:hover{background:#f3f8fa}
+.collaborators-section{padding-top:64px}.collab-controls{position:sticky;top:82px;z-index:8;background:rgba(244,247,248,.92);backdrop-filter:blur(12px);padding:12px;border-radius:16px}.collab-controls input,.collab-controls select{min-height:48px;box-shadow:0 6px 18px rgba(11,53,88,.04)}.collab-table-wrap{border-radius:22px;box-shadow:0 16px 44px rgba(11,53,88,.07)}.collab-table th{padding:15px 14px}.collab-table td{padding:14px}.collab-table tbody tr{transition:background .2s ease}.collab-table tbody tr:hover{background:#eef6f8}.status-pill{padding:7px 11px}
+.conclusion-section .cardio-context{background:linear-gradient(145deg,#fff,#f5fafb)!important;border-left:5px solid var(--blue)!important;padding:34px!important}.recommendations-section{background:linear-gradient(180deg,#fff,#f5f9fa)}.recommendation-card{border-top:4px solid var(--blue);transition:transform .25s ease,box-shadow .25s ease}.recommendation-card:hover{transform:translateY(-4px);box-shadow:0 18px 42px rgba(11,53,88,.09)}.recommendation-card:nth-child(2n){border-top-color:var(--lime)}
+.footer{background:linear-gradient(110deg,#082b49,#0b466d);padding:34px}
+@media(max-width:900px){.functional-variable{grid-template-columns:1fr}.condition{padding:24px}.icr-kpis{grid-template-columns:1fr}.collab-controls{position:static}}
+@media print{.condition,.chart,.icr-kpi,.collab-table-wrap,.recommendation-card{box-shadow:none!important}.recommendation-card:hover{transform:none}.collab-controls{display:none!important}.icr-section,.recommendations-section{background:#fff!important}}
 </style>
-</head>
+<style>
+/* Correccion final de graficos: escala absoluta 0-100%.
+   La longitud de cada barra corresponde al porcentaje impreso a la derecha. */
+.track i{min-width:2px}
+.metabolic-modern .metric-chart .track i{width:var(--target-width)!important}
+@media print{.track i{width:var(--target-width)!important;animation:none!important;transition:none!important}}
+</style></head>
 <body>
 <header>
 <div class="nav">
@@ -272,7 +316,7 @@
          Óptima
         </span>
 <div class="track">
-<i style="width:100%">
+<i style="width:34.4%;--target-width:34.4%">
 </i>
 </div>
 <b>
@@ -287,7 +331,7 @@
          Normal
         </span>
 <div class="track">
-<i style="width:71.4%">
+<i style="width:24.6%;--target-width:24.6%">
 </i>
 </div>
 <b>
@@ -302,7 +346,7 @@
          Normal alta
         </span>
 <div class="track">
-<i style="width:69.0%">
+<i style="width:23.8%;--target-width:23.8%">
 </i>
 </div>
 <b>
@@ -317,7 +361,7 @@
          Hipertensión grado 1
         </span>
 <div class="track">
-<i style="width:40.5%">
+<i style="width:13.9%;--target-width:13.9%">
 </i>
 </div>
 <b>
@@ -332,7 +376,7 @@
          Hipertensión grado 2
         </span>
 <div class="track">
-<i style="width:9.5%">
+<i style="width:3.3%;--target-width:3.3%">
 </i>
 </div>
 <b>
@@ -352,7 +396,7 @@
          Óptima
         </span>
 <div class="track">
-<i style="width:100%">
+<i style="width:41.0%;--target-width:41.0%">
 </i>
 </div>
 <b>
@@ -367,7 +411,7 @@
          Normal
         </span>
 <div class="track">
-<i style="width:68.0%">
+<i style="width:27.9%;--target-width:27.9%">
 </i>
 </div>
 <b>
@@ -382,7 +426,7 @@
          Normal alta
         </span>
 <div class="track">
-<i style="width:28.0%">
+<i style="width:11.5%;--target-width:11.5%">
 </i>
 </div>
 <b>
@@ -397,7 +441,7 @@
          Hipertensión grado 1
         </span>
 <div class="track">
-<i style="width:42.0%">
+<i style="width:17.2%;--target-width:17.2%">
 </i>
 </div>
 <b>
@@ -412,7 +456,7 @@
          Hipertensión grado 2
         </span>
 <div class="track">
-<i style="width:4.0%">
+<i style="width:1.6%;--target-width:1.6%">
 </i>
 </div>
 <b>
@@ -427,7 +471,7 @@
          Hipertensión grado 3
         </span>
 <div class="track">
-<i style="width:2.0%">
+<i style="width:0.8%;--target-width:0.8%">
 </i>
 </div>
 <b>
@@ -465,7 +509,7 @@
          Buena
         </span>
 <div class="track">
-<i style="width:100%">
+<i style="width:63.1%;--target-width:63.1%">
 </i>
 </div>
 <b>
@@ -480,7 +524,7 @@
          Normal
         </span>
 <div class="track">
-<i style="width:45.5%">
+<i style="width:28.7%;--target-width:28.7%">
 </i>
 </div>
 <b>
@@ -495,7 +539,7 @@
          Deficiente
         </span>
 <div class="track">
-<i style="width:13.0%">
+<i style="width:8.2%;--target-width:8.2%">
 </i>
 </div>
 <b>
@@ -546,7 +590,7 @@
 <p>La integración posterior de estos resultados con las condiciones metabólica y funcional, mediante el Índice de Carga de Riesgo, permitirá identificar a los colaboradores en quienes coinciden varias dimensiones alteradas. De esta forma, las decisiones de bienestar no dependerán de una única medición, sino de una lectura integral de las necesidades de cada persona.</p>
 </article>
 </div>
-</div><div class="condition">
+</div><div class="condition metabolic-modern">
 <div class="condition-head">
 <span>
        Condición metabólica
@@ -561,7 +605,7 @@
 </article>
 </div>
 <div class="charts">
-<article class="chart">
+<article class="chart metric-chart numed-glass" data-metric="IMC">
 <h3>
         IMC
        </h3>
@@ -570,7 +614,7 @@
          Infrapeso
         </span>
 <div class="track">
-<i style="width:3.6%">
+<i style="width:1.6%;--target-width:1.6%">
 </i>
 </div>
 <b>
@@ -585,7 +629,7 @@
          Normal
         </span>
 <div class="track">
-<i style="width:60.7%">
+<i style="width:27.9%;--target-width:27.9%">
 </i>
 </div>
 <b>
@@ -600,7 +644,7 @@
          Sobrepeso
         </span>
 <div class="track">
-<i style="width:100.0%">
+<i style="width:45.9%;--target-width:45.9%">
 </i>
 </div>
 <b>
@@ -615,7 +659,7 @@
          Obesidad
         </span>
 <div class="track">
-<i style="width:37.5%">
+<i style="width:17.2%;--target-width:17.2%">
 </i>
 </div>
 <b>
@@ -630,7 +674,7 @@
          Obesidad Tipo II
         </span>
 <div class="track">
-<i style="width:8.9%">
+<i style="width:4.1%;--target-width:4.1%">
 </i>
 </div>
 <b>
@@ -645,7 +689,7 @@
          Obesidad Tipo III
         </span>
 <div class="track">
-<i style="width:7.1%">
+<i style="width:3.3%;--target-width:3.3%">
 </i>
 </div>
 <b>
@@ -656,7 +700,7 @@
 </b>
 </div>
 </article>
-<article class="chart metabolic-reading" style="grid-column:1 / -1;">
+<article class="chart metabolic-reading insight-card" style="grid-column:1 / -1;">
 <h3>¿Qué muestran los resultados del IMC?</h3>
 <div style="display:grid;grid-template-columns:minmax(190px,260px) 1fr;gap:24px;align-items:start;">
 <div style="background:#f3f7f9;border-radius:18px;padding:24px;">
@@ -673,11 +717,11 @@
 </div>
 </div>
 </article>
-<article class="chart metabolic-reading" style="grid-column:1 / -1;">
+<article class="chart metabolic-reading metric-chart numed-glass" data-metric="Porcentaje de grasa corporal" style="grid-column:1 / -1;">
 <h3>Porcentaje de grasa corporal</h3>
 <p>El porcentaje de grasa corporal estima qué proporción del peso total corresponde a tejido graso. Esta medición complementa el IMC porque permite diferenciar con mayor precisión la composición corporal y reconocer situaciones en las que una persona puede tener un peso clasificado como Normal, pero una proporción de grasa superior al rango esperado.</p>
 </article>
-<article class="chart">
+<article class="chart metric-chart numed-glass" data-metric="Porcentaje de grasa corporal">
 <h3>
         Porcentaje de grasa corporal
        </h3>
@@ -686,7 +730,7 @@
          Bajo
         </span>
 <div class="track">
-<i style="width:4.3%">
+<i style="width:1.7%;--target-width:1.7%">
 </i>
 </div>
 <b>
@@ -701,7 +745,7 @@
          Normal
         </span>
 <div class="track">
-<i style="width:71.7%">
+<i style="width:27.3%;--target-width:27.3%">
 </i>
 </div>
 <b>
@@ -716,7 +760,7 @@
          Alto
         </span>
 <div class="track">
-<i style="width:87.0%">
+<i style="width:33.1%;--target-width:33.1%">
 </i>
 </div>
 <b>
@@ -731,7 +775,7 @@
          Muy alto
         </span>
 <div class="track">
-<i style="width:100.0%">
+<i style="width:38.0%;--target-width:38.0%">
 </i>
 </div>
 <b>
@@ -742,19 +786,19 @@
 </b>
 </div>
 </article>
-<article class="chart metabolic-reading" style="grid-column:1 / -1;">
+<article class="chart metabolic-reading insight-card" style="grid-column:1 / -1;">
 <h3>¿Qué muestran los resultados de grasa corporal?</h3>
 <p>El <b>38.0% —46 colaboradores—</b> presentó una clasificación de grasa corporal Muy alta, mientras que el <b>33.1% —40 colaboradores—</b> se ubicó en la categoría Alta.</p>
 <p>En conjunto, el <b>71.1% —86 colaboradores—</b> presentó grasa corporal Alta o Muy alta. Esto convierte al porcentaje de grasa corporal en una de las variables con mayor concentración de resultados desfavorables dentro de la jornada.</p>
 <p>El <b>27.3% —33 colaboradores—</b> se ubicó en la categoría Normal y el <b>1.7% —2 colaboradoras—</b> presentó una clasificación Baja.</p>
 <p>Estos resultados muestran que una proporción considerable de la población evaluada presenta una composición corporal que requiere atención preventiva. También evidencian que el abordaje no debe limitarse al peso total, ya que el porcentaje de grasa aporta información que el IMC no identifica de manera directa.</p>
 </article>
-<article class="chart metabolic-reading" style="grid-column:1 / -1;">
+<article class="chart metabolic-reading metric-chart numed-glass" data-metric="Perímetro abdominal" style="grid-column:1 / -1;">
 <h3>Perímetro abdominal</h3>
 <p>El perímetro abdominal permite evaluar la concentración de tejido graso en la zona central del cuerpo. Esta variable complementa el IMC y el porcentaje de grasa corporal, ya que aporta información sobre la distribución de la grasa y permite diferenciar entre una composición corporal favorable y patrones de acumulación abdominal que requieren mayor vigilancia.</p>
 <p>La acumulación de grasa en la región abdominal se asocia con un perfil cardiometabólico menos favorable; sin embargo, el resultado de esta medición debe interpretarse como una señal para prevención y seguimiento, no como un diagnóstico individual.</p>
 </article>
-<article class="chart">
+<article class="chart metric-chart numed-glass" data-metric="Perímetro abdominal">
 <h3>
         Perímetro abdominal
        </h3>
@@ -763,7 +807,7 @@
          Normal
         </span>
 <div class="track">
-<i style="width:100.0%">
+<i style="width:45.1%;--target-width:45.1%">
 </i>
 </div>
 <b>
@@ -778,7 +822,7 @@
          Riesgo elevado
         </span>
 <div class="track">
-<i style="width:56.4%">
+<i style="width:25.4%;--target-width:25.4%">
 </i>
 </div>
 <b>
@@ -793,7 +837,7 @@
          Riesgo muy elevado
         </span>
 <div class="track">
-<i style="width:65.5%">
+<i style="width:29.5%;--target-width:29.5%">
 </i>
 </div>
 <b>
@@ -864,7 +908,7 @@
          Muy pobre
         </span>
 <div class="track">
-<i style="width:100.0%">
+<i style="width:51.7%;--target-width:51.7%">
 </i>
 </div>
 <b>
@@ -879,7 +923,7 @@
          Pobre
         </span>
 <div class="track">
-<i style="width:43.5%">
+<i style="width:22.5%;--target-width:22.5%">
 </i>
 </div>
 <b>
@@ -894,7 +938,7 @@
          Promedio
         </span>
 <div class="track">
-<i style="width:46.8%">
+<i style="width:24.2%;--target-width:24.2%">
 </i>
 </div>
 <b>
@@ -909,7 +953,7 @@
          Excelente
         </span>
 <div class="track">
-<i style="width:3.2%">
+<i style="width:1.7%;--target-width:1.7%">
 </i>
 </div>
 <b>
@@ -939,7 +983,7 @@
          Débil
         </span>
 <div class="track">
-<i style="width:100.0%">
+<i style="width:57.4%;--target-width:57.4%">
 </i>
 </div>
 <b>
@@ -954,7 +998,7 @@
          Normal
         </span>
 <div class="track">
-<i style="width:65.7%">
+<i style="width:37.7%;--target-width:37.7%">
 </i>
 </div>
 <b>
@@ -969,7 +1013,7 @@
          Fuerte
         </span>
 <div class="track">
-<i style="width:8.6%">
+<i style="width:4.9%;--target-width:4.9%">
 </i>
 </div>
 <b>
@@ -999,7 +1043,7 @@
          Malo
         </span>
 <div class="track">
-<i style="width:10.4%">
+<i style="width:4.6%;--target-width:4.6%">
 </i>
 </div>
 <b>
@@ -1014,7 +1058,7 @@
          Debajo del promedio
         </span>
 <div class="track">
-<i style="width:41.7%">
+<i style="width:18.3%;--target-width:18.3%">
 </i>
 </div>
 <b>
@@ -1029,7 +1073,7 @@
          Promedio
         </span>
 <div class="track">
-<i style="width:100.0%">
+<i style="width:44.0%;--target-width:44.0%">
 </i>
 </div>
 <b>
@@ -1044,7 +1088,7 @@
          Sobre el promedio
         </span>
 <div class="track">
-<i style="width:39.6%">
+<i style="width:17.4%;--target-width:17.4%">
 </i>
 </div>
 <b>
@@ -1059,7 +1103,7 @@
          Bueno
         </span>
 <div class="track">
-<i style="width:22.9%">
+<i style="width:10.1%;--target-width:10.1%">
 </i>
 </div>
 <b>
@@ -1074,7 +1118,7 @@
          Excelente
         </span>
 <div class="track">
-<i style="width:12.5%">
+<i style="width:5.5%;--target-width:5.5%">
 </i>
 </div>
 <b>
@@ -1104,7 +1148,7 @@
          Muy malo
         </span>
 <div class="track">
-<i style="width:93.1%">
+<i style="width:23.5%;--target-width:23.5%">
 </i>
 </div>
 <b>
@@ -1119,7 +1163,7 @@
          Malo
         </span>
 <div class="track">
-<i style="width:100.0%">
+<i style="width:25.2%;--target-width:25.2%">
 </i>
 </div>
 <b>
@@ -1134,7 +1178,7 @@
          Debajo del promedio
         </span>
 <div class="track">
-<i style="width:62.1%">
+<i style="width:15.7%;--target-width:15.7%">
 </i>
 </div>
 <b>
@@ -1149,7 +1193,7 @@
          Promedio
         </span>
 <div class="track">
-<i style="width:65.5%">
+<i style="width:16.5%;--target-width:16.5%">
 </i>
 </div>
 <b>
@@ -1164,7 +1208,7 @@
          Sobre el promedio
         </span>
 <div class="track">
-<i style="width:24.1%">
+<i style="width:6.1%;--target-width:6.1%">
 </i>
 </div>
 <b>
@@ -1179,7 +1223,7 @@
          Bueno
         </span>
 <div class="track">
-<i style="width:48.3%">
+<i style="width:12.2%;--target-width:12.2%">
 </i>
 </div>
 <b>
@@ -1194,7 +1238,7 @@
          Excelente
         </span>
 <div class="track">
-<i style="width:3.4%">
+<i style="width:0.9%;--target-width:0.9%">
 </i>
 </div>
 <b>
@@ -1224,7 +1268,7 @@
          Muy malo
         </span>
 <div class="track">
-<i style="width:5.5%">
+<i style="width:2.5%;--target-width:2.5%">
 </i>
 </div>
 <b>
@@ -1239,7 +1283,7 @@
          Malo
         </span>
 <div class="track">
-<i style="width:10.9%">
+<i style="width:5.0%;--target-width:5.0%">
 </i>
 </div>
 <b>
@@ -1254,7 +1298,7 @@
          Debajo del promedio
         </span>
 <div class="track">
-<i style="width:10.9%">
+<i style="width:5.0%;--target-width:5.0%">
 </i>
 </div>
 <b>
@@ -1269,7 +1313,7 @@
          Promedio
         </span>
 <div class="track">
-<i style="width:18.2%">
+<i style="width:8.4%;--target-width:8.4%">
 </i>
 </div>
 <b>
@@ -1284,7 +1328,7 @@
          Sobre el promedio
         </span>
 <div class="track">
-<i style="width:23.6%">
+<i style="width:10.9%;--target-width:10.9%">
 </i>
 </div>
 <b>
@@ -1299,7 +1343,7 @@
          Bueno
         </span>
 <div class="track">
-<i style="width:47.3%">
+<i style="width:21.8%;--target-width:21.8%">
 </i>
 </div>
 <b>
@@ -1314,7 +1358,7 @@
          Excelente
         </span>
 <div class="track">
-<i style="width:100.0%">
+<i style="width:46.2%;--target-width:46.2%">
 </i>
 </div>
 <b>
@@ -1380,9 +1424,6 @@
 </table>
 </div>
 <div class="icr-highlight"><strong>87.7% · 107 colaboradores</strong><p>El principal hallazgo del ICR es que 107 de los 122 colaboradores evaluados acumulan tres o más variables afectadas. Esto representa una carga acumulativa de hallazgos y no equivale, por sí sola, a un diagnóstico clínico ni a que las tres condiciones estén necesariamente alteradas.</p></div>
-<div class="icr-method">
-<article><h3>¿Cómo se calcula?</h3><p>El ICR utiliza las 11 variables disponibles: tres metabólicas, tres cardiovasculares y cinco funcionales. Cada variable definida como afectada suma <b>1 punto</b>; una clasificación favorable suma <b>0 puntos</b>. La severidad de una misma variable no agrega puntos adicionales.</p><p>El ICR es una herramienta interna de segmentación preventiva construida a partir del Functional Health Test. No constituye un diagnóstico clínico ni una probabilidad validada de enfermedad.</p></article>
-</div>
 </section>
 <section class="collaborators-section" id="colaboradores">
 <div class="section-head">
@@ -1530,10 +1571,10 @@
 </div>
 <div class="cardio-context" style="margin-top:20px;padding:28px;border:1px solid #dce6ee;border-radius:20px;background:#f8fbfc;">
 <p>La Jornada Integral de Salud realizada por NUMED Care permitió identificar un panorama caracterizado por una coexistencia relevante de hallazgos metabólicos, cardiovasculares y funcionales en la población evaluada. Los resultados muestran que las principales oportunidades de intervención no se concentran en una única variable, sino en la combinación de diferentes dimensiones de salud y condición física.</p>
-<p>En la <b>condición metabólica</b> se identificó una de las principales áreas de oportunidad. El <b>70.5% —86 colaboradores—</b> presentó una clasificación de exceso de peso según el IMC y el <b>71.1% —86 colaboradores—</b> registró un porcentaje de grasa corporal Alto o Muy alto. Asimismo, el <b>54.9% —67 colaboradores—</b> presentó Riesgo elevado o Riesgo muy elevado según el perímetro abdominal. Al integrar las tres mediciones, el <b>85.2% —104 colaboradores—</b> presentó al menos una variable fuera de la categoría Normal y el <b>48.4% —59 colaboradores—</b> concentró simultáneamente exceso de peso, grasa corporal elevada y riesgo abdominal.</p>
+<p>En la <b>condición metabólica</b> se identificó una de las principales áreas de oportunidad. El <b>70.5% —86 colaboradores</b> presentó una clasificación de exceso de peso según el IMC y el <b>71.1% —86 colaboradores</b> registró un porcentaje de grasa corporal Alto o Muy alto. Asimismo, el <b>54.9% —67 colaboradores</b> presentó Riesgo elevado o Riesgo muy elevado según el perímetro abdominal. Al integrar las tres mediciones, el <b>85.2% —104 colaboradores—</b> presentó al menos una variable fuera de la categoría Normal y el <b>48.4% —59 colaboradores—</b> concentró simultáneamente exceso de peso, grasa corporal elevada y riesgo abdominal.</p>
 <p>La <b>condición cardiovascular</b> presentó un comportamiento más heterogéneo. La frecuencia cardíaca mostró una distribución predominantemente favorable, mientras que la presión arterial permitió identificar grupos que requieren diferentes niveles de prevención y seguimiento. Al considerar conjuntamente la presión sistólica y diastólica, el <b>29.5% —36 colaboradores—</b> presentó al menos una cifra clasificada en algún grado de hipertensión y un <b>5.7% —7 colaboradores—</b> registró grado 2 o grado 3 en al menos uno de sus componentes. Estos resultados requieren confirmación mediante evaluación profesional y mediciones posteriores y no constituyen, por sí solos, un diagnóstico de hipertensión.</p>
-<p>En la <b>condición funcional</b>, las mayores oportunidades se concentraron en flexibilidad, fuerza muscular y resistencia abdominal. El <b>74.2% —89 colaboradores—</b> presentó flexibilidad Pobre o Muy pobre, el <b>57.4% —70 colaboradores—</b> obtuvo una clasificación Débil en fuerza y el <b>64.3% —74 colaboradores—</b> presentó resultados desfavorables en resistencia abdominal. En contraste, la resistencia en flexiones y, especialmente, la resistencia en sentadillas mostraron comportamientos comparativamente más favorables. La estadística identificó que el <b>92.6% —113 colaboradores—</b> presentó al menos una oportunidad de mejora funcional y el <b>43.4% —53 colaboradores—</b> acumuló tres o más clasificaciones desfavorables, sin que estos resultados impliquen incapacidad funcional o laboral.</p>
-<p>En conjunto, los hallazgos muestran que las necesidades observadas trascienden variables aisladas. El <b>Índice de Carga de Riesgo (ICR)</b> confirma esta coexistencia: de los 122 colaboradores evaluados, el <b>87.7% —107 colaboradores—</b> acumuló tres o más variables afectadas, el <b>11.5% —14 colaboradores—</b> presentó una o dos variables afectadas y el <b>0.8% —1 colaborador—</b> obtuvo ICR = 0.</p>
+<p>En la <b>condición funcional</b>, las mayores oportunidades se concentraron en flexibilidad, fuerza muscular y resistencia abdominal. El <b>74.2% —89 colaboradores—</b> presentó flexibilidad Pobre o Muy pobre, el <b>57.4% —70 colaboradores</b> obtuvo una clasificación Débil en fuerza y el <b>64.3% —74 colaboradores</b> presentó resultados desfavorables en resistencia abdominal. En contraste, la resistencia en flexiones y, especialmente, la resistencia en sentadillas mostraron comportamientos comparativamente más favorables. La estadística identificó que el <b>92.6% —113 colaboradores—</b> presentó al menos una oportunidad de mejora funcional y el <b>43.4% —53 colaboradores—</b> acumuló tres o más clasificaciones desfavorables, sin que estos resultados impliquen incapacidad funcional o laboral.</p>
+<p>En conjunto, los hallazgos muestran que las necesidades observadas trascienden variables aisladas. El <b>Índice de Carga de Riesgo (ICR)</b> confirma esta coexistencia: en los 122 colaboradores evaluados, el <b>87.7% —107 colaboradores</b> acumuló tres o más variables afectadas, el <b>11.5% —14 colaboradores</b> presentó una o dos variables afectadas y el <b>0.8% —1 colaborador—</b> obtuvo un ICR de 0.</p>
 <p>Para BHD, esta jornada constituye un punto de partida para transformar la información obtenida en acciones concretas de prevención y acompañamiento. Los resultados permiten orientar iniciativas de educación nutricional, actividad física, movilidad, fortalecimiento, seguimiento cardiovascular y reevaluación periódica, priorizando los recursos de acuerdo con las necesidades identificadas.</p>
 <p style="margin-bottom:0">El objetivo no debe limitarse a modificar indicadores individuales, sino a establecer una estrategia sostenible que favorezca la salud y el bienestar de los colaboradores a lo largo del tiempo. La evaluación realizada representa una fotografía del momento y proporciona una línea de base desde la cual BHD y NUMED Care pueden medir evolución, identificar cambios y valorar el impacto de las acciones que se implementen posteriormente.</p>
 </div>
@@ -1555,15 +1596,14 @@
 <div class="footer">
    NUMED CARE · Reporte BHD · Agosto 2026
   </div>
-
 <script>
-function filterCollaborators() {
-  const search = (document.getElementById('collabSearch')?.value || '').toLowerCase().trim();
-  const state = document.getElementById('collabState')?.value || 'all';
-  document.querySelectorAll('tbody tr[data-name][data-state]').forEach((row) => {
-    const matchesSearch = (row.dataset.name || '').includes(search);
-    const matchesState = state === 'all' || row.dataset.state === state;
-    row.style.display = matchesSearch && matchesState ? '' : 'none';
+function filterCollaborators(){
+  const q=(document.getElementById('collabSearch')?.value||'').toLowerCase().trim();
+  const state=document.getElementById('collabState')?.value||'';
+  document.querySelectorAll('#collabBody tr').forEach(row=>{
+    const name=(row.dataset.name||'').toLowerCase();
+    const rowState=row.dataset.state||'';
+    row.style.display=(!q||name.includes(q))&&(!state||rowState===state)?'':'none';
   });
 }
 </script>
