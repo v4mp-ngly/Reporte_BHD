@@ -110,52 +110,8 @@
 
 /* Listado individual ICR */
 .collaborators-section{margin-top:54px}.collab-summary{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:22px 0}.collab-summary article{background:#f7fafb;border:1px solid #dce6ee;border-radius:16px;padding:18px}.collab-summary strong{display:block;font-size:28px;color:var(--blue)}.collab-summary span{font-size:13px;color:#64788d;font-weight:700}.collab-controls{display:grid;grid-template-columns:1fr 240px;gap:12px;margin:18px 0}.collab-controls input,.collab-controls select{width:100%;border:1px solid #cfdce5;border-radius:12px;padding:12px 14px;font:inherit;background:#fff;color:#17324d}.collab-table-wrap{overflow:auto;border:1px solid #dce6ee;border-radius:18px;background:#fff;max-height:680px}.collab-table{width:100%;border-collapse:collapse;min-width:1180px;font-size:12px}.collab-table th{position:sticky;top:0;background:#0b3558;color:#fff;text-align:left;padding:12px;z-index:1}.collab-table td{padding:11px 12px;border-bottom:1px solid #e8eef2;vertical-align:top;line-height:1.45}.collab-table tbody tr:nth-child(even){background:#f9fbfc}.status-pill{display:inline-block;padding:5px 9px;border-radius:999px;font-size:11px;font-weight:800;white-space:nowrap}.status-pill.safe{background:#e8f5ee;color:#23734b}.status-pill.average{background:#fff4d8;color:#936600}.status-pill.critical{background:#fde9e7;color:#a63d32}.status-pill.pending{background:#eef1f4;color:#5c6875}.collab-note{font-size:12px;color:#687c90;margin-top:12px}@media(max-width:760px){.collab-summary{grid-template-columns:1fr}.collab-controls{grid-template-columns:1fr}}@media print{.collab-controls{display:none}.collab-table-wrap{max-height:none;overflow:visible}.collab-table th{position:static}.collab-table{font-size:9px;min-width:0}.collab-table th,.collab-table td{padding:6px}.collaborators-section{break-before:page}}
-
-/* ===== NUMED 2026 · Modern visual layer ===== */
-html{scroll-behavior:smooth} body{background:radial-gradient(circle at 8% 8%,rgba(168,202,58,.08),transparent 22%),radial-gradient(circle at 92% 18%,rgba(40,126,170,.08),transparent 25%),var(--bg)}
-header{backdrop-filter:blur(18px);background:rgba(255,255,255,.92)}
-.btn{transition:transform .25s ease,box-shadow .25s ease,background .25s ease;box-shadow:0 8px 20px rgba(11,53,88,.14)}.btn:hover{transform:translateY(-2px);box-shadow:0 12px 26px rgba(11,53,88,.22);background:#124c76}
-.hero{position:relative;overflow:hidden;background:linear-gradient(125deg,#082b49 0%,#0b466d 58%,#287eaa 100%)}.hero:after{content:"";position:absolute;width:420px;height:420px;border:1px solid rgba(255,255,255,.12);border-radius:50%;right:-100px;top:-210px;box-shadow:0 0 0 55px rgba(255,255,255,.025),0 0 0 110px rgba(168,202,58,.035)}
-.condition,.intro,.icrbox{box-shadow:0 18px 55px rgba(11,53,88,.06)}
-.metabolic-modern{position:relative;overflow:hidden;border:1px solid rgba(40,126,170,.16);background:linear-gradient(180deg,#fff 0%,#fbfdfe 100%)}
-.metabolic-modern:before{content:"";position:absolute;top:0;left:0;right:0;height:5px;background:linear-gradient(90deg,var(--navy),var(--blue) 55%,var(--lime))}
-.metabolic-modern .condition-head{padding:8px 4px 20px}.metabolic-modern .condition-head span{font-size:28px;letter-spacing:-.03em}
-.metabolic-modern .charts{grid-template-columns:repeat(12,1fr);gap:20px}.metabolic-modern .metric-chart{grid-column:span 12;padding:26px 28px;border-radius:24px;background:linear-gradient(145deg,#fff,#f7fbfc);border:1px solid #dce8ed;box-shadow:0 14px 34px rgba(11,53,88,.075);transition:transform .3s ease,box-shadow .3s ease,border-color .3s ease;position:relative;overflow:hidden}
-.metabolic-modern .metric-chart:hover{transform:translateY(-4px);box-shadow:0 20px 42px rgba(11,53,88,.12);border-color:rgba(40,126,170,.35)}
-.metabolic-modern .metric-chart:after{content:attr(data-metric);position:absolute;right:18px;top:10px;font-size:46px;font-weight:900;letter-spacing:-.06em;color:rgba(40,126,170,.045);pointer-events:none;white-space:nowrap}
-.metabolic-modern .metric-chart h3{font-size:21px;color:var(--navy);padding-bottom:15px;margin-bottom:18px;border-bottom:1px solid #e7eef2;position:relative}.metabolic-modern .metric-chart h3:after{content:"";position:absolute;left:0;bottom:-1px;width:72px;height:3px;border-radius:5px;background:linear-gradient(90deg,var(--blue),var(--lime))}
-.metabolic-modern .metric-chart .barrow{grid-template-columns:minmax(145px,.42fr) minmax(300px,1.5fr) minmax(140px,.38fr);gap:14px;margin:14px 0;font-size:12px}.metabolic-modern .metric-chart .barrow>span{font-weight:700;color:#34546d}.metabolic-modern .metric-chart .track{height:15px;background:#eaf0f3;box-shadow:inset 0 1px 2px rgba(11,53,88,.06)}.metabolic-modern .metric-chart .track i{width:var(--target-width)!important;background:linear-gradient(90deg,#287eaa 0%,#48a0bd 55%,#a8ca3a 100%);box-shadow:0 2px 8px rgba(40,126,170,.22);transition:width .8s cubic-bezier(.2,.8,.2,1)}.metabolic-modern .metric-chart.is-visible .track i{width:var(--target-width)!important}.metabolic-modern .metric-chart .barrow b{font-size:15px;color:var(--navy)}.metabolic-modern .metric-chart .barrow small{font-size:10px;margin-top:3px}
-.metabolic-modern .metabolic-reading{border:0!important;background:linear-gradient(135deg,#f2f8fa,#f8fbef)!important;border-radius:22px!important;padding:26px 28px!important;box-shadow:none!important}.metabolic-modern .metabolic-reading h3{font-size:20px;color:var(--navy);margin-bottom:12px}.metabolic-modern .metabolic-reading p{line-height:1.75;color:#526d82}.metabolic-modern .metabolic-reading b{color:#174f74}.metabolic-modern .insight-card{position:relative}.metabolic-modern .insight-card:before{content:"INSIGHT";display:inline-flex;padding:6px 10px;border-radius:999px;background:#e6f1f5;color:var(--blue);font-size:9px;font-weight:900;letter-spacing:.13em;margin-bottom:12px}
-.metabolic-modern .impact article{border:1px solid #e0eaee;background:linear-gradient(145deg,#f8fbfc,#fff);transition:transform .25s ease,box-shadow .25s ease}.metabolic-modern .impact article:hover{transform:translateY(-3px);box-shadow:0 12px 28px rgba(11,53,88,.07)}
-.reveal-numed{opacity:1;transform:none}.metric-chart,.recommendation-card,.icrcard{animation:numedEnter .55s ease both}@keyframes numedEnter{from{opacity:.35;transform:translateY(10px)}to{opacity:1;transform:none}}
-@media(max-width:900px){.metabolic-modern .metric-chart .barrow{grid-template-columns:120px 1fr 110px}.metabolic-modern .metric-chart:after{font-size:30px}.metabolic-modern .charts{display:block}.metabolic-modern .charts>article{margin-bottom:16px}}
-@media(max-width:620px){.metabolic-modern .metric-chart{padding:20px}.metabolic-modern .metric-chart .barrow{grid-template-columns:1fr 82px}.metabolic-modern .metric-chart .barrow .track{grid-column:1/-1;grid-row:2}.metabolic-modern .metric-chart .barrow b{grid-column:2;grid-row:1}.metabolic-modern .metric-chart:after{display:none}}
-@media print{.reveal-numed{opacity:1!important;transform:none!important}.metabolic-modern .metric-chart{box-shadow:none;break-inside:avoid}.metabolic-modern .metric-chart .track i{width:var(--target-width)!important}.metabolic-modern .metric-chart:hover,.metabolic-modern .impact article:hover{transform:none}.hero:after{display:none}}
-
-/* ===== NUMED Premium final visual refresh ===== */
-:root{--surface:#ffffff;--surface2:#f7fafb;--line:#dbe7ed;--shadow:0 18px 50px rgba(11,53,88,.08)}
-main{overflow:hidden} section{position:relative}
-.section-head{max-width:1180px;margin-left:auto;margin-right:auto}.section-head h2{letter-spacing:-.035em;font-size:clamp(30px,4vw,46px);line-height:1.08}.section-head .eyebrow{display:inline-flex;align-items:center;gap:8px;padding:7px 11px;border-radius:999px;background:#eaf5f7}
-.condition{border-radius:28px;border-color:var(--line);box-shadow:var(--shadow);padding:34px}.condition-head{align-items:center}.condition-head span{font-size:30px;letter-spacing:-.035em}.chart{border-radius:20px;background:linear-gradient(145deg,#fff,#f8fbfc);box-shadow:0 10px 30px rgba(11,53,88,.045)}
-.track{height:14px}.track i{background:linear-gradient(90deg,#1e7fa9,#58a7b7 58%,#a8ca3a)}
-.cardio-context,.functional-context,.functional-integrated,.functional-impact,.functional-analysis,.recommendation-card,.icr-kpi{box-shadow:0 10px 30px rgba(11,53,88,.045)}
-.functional-variable{grid-template-columns:minmax(300px,.82fr) minmax(520px,1.18fr);gap:30px;align-items:center;padding:32px 0}.functional-copy{padding:10px 8px}.functional-copy h3{font-size:29px;letter-spacing:-.025em}.functional-variable .chart{padding:26px}.functional-variable .chart .barrow{margin:13px 0}.functional-analysis{margin-top:6px}
-.metabolic-modern .metric-chart{padding:30px 32px}.metabolic-modern .metric-chart h3{font-size:24px}.metabolic-modern .metric-chart .barrow{margin:16px 0}.metabolic-modern .metric-chart .track{height:16px}
-.icr-section{background:linear-gradient(180deg,#eef6f8 0%,#f8fafb 100%);padding-top:64px;padding-bottom:64px}.icr-kpis{grid-template-columns:repeat(3,1fr);gap:18px}.icr-kpi{padding:26px;border-radius:22px}.icr-kpi strong{font-size:46px}.icr-kpi.safe{background:linear-gradient(145deg,#fff,#edf8f2)}.icr-kpi.average{background:linear-gradient(145deg,#fff,#fff8e9)}.icr-kpi.critical{background:linear-gradient(145deg,#fff,#fff0ee)}
-.icr-table-wrap{box-shadow:0 14px 38px rgba(11,53,88,.06);border-radius:22px}.icr-table th{background:#0b3558;color:#fff}.icr-table tbody tr:hover{background:#f3f8fa}
-.collaborators-section{padding-top:64px}.collab-controls{position:sticky;top:82px;z-index:8;background:rgba(244,247,248,.92);backdrop-filter:blur(12px);padding:12px;border-radius:16px}.collab-controls input,.collab-controls select{min-height:48px;box-shadow:0 6px 18px rgba(11,53,88,.04)}.collab-table-wrap{border-radius:22px;box-shadow:0 16px 44px rgba(11,53,88,.07)}.collab-table th{padding:15px 14px}.collab-table td{padding:14px}.collab-table tbody tr{transition:background .2s ease}.collab-table tbody tr:hover{background:#eef6f8}.status-pill{padding:7px 11px}
-.conclusion-section .cardio-context{background:linear-gradient(145deg,#fff,#f5fafb)!important;border-left:5px solid var(--blue)!important;padding:34px!important}.recommendations-section{background:linear-gradient(180deg,#fff,#f5f9fa)}.recommendation-card{border-top:4px solid var(--blue);transition:transform .25s ease,box-shadow .25s ease}.recommendation-card:hover{transform:translateY(-4px);box-shadow:0 18px 42px rgba(11,53,88,.09)}.recommendation-card:nth-child(2n){border-top-color:var(--lime)}
-.footer{background:linear-gradient(110deg,#082b49,#0b466d);padding:34px}
-@media(max-width:900px){.functional-variable{grid-template-columns:1fr}.condition{padding:24px}.icr-kpis{grid-template-columns:1fr}.collab-controls{position:static}}
-@media print{.condition,.chart,.icr-kpi,.collab-table-wrap,.recommendation-card{box-shadow:none!important}.recommendation-card:hover{transform:none}.collab-controls{display:none!important}.icr-section,.recommendations-section{background:#fff!important}}
 </style>
-<style>
-/* Correccion final de graficos: escala absoluta 0-100%.
-   La longitud de cada barra corresponde al porcentaje impreso a la derecha. */
-.track i{min-width:2px}
-.metabolic-modern .metric-chart .track i{width:var(--target-width)!important}
-@media print{.track i{width:var(--target-width)!important;animation:none!important;transition:none!important}}
-</style></head>
+</head>
 <body>
 <header>
 <div class="nav">
@@ -193,41 +149,41 @@ main{overflow:hidden} section{position:relative}
 <p class="intro-copy">
        En el marco de las acciones de bienestar y prevención desarrolladas por
        <b>
-        NUMED Care para BHD,
+        NUMED Care para BHD
        </b>
-       entre el
+       , entre el
        <b>
         12 y el 14 de agosto de 2026
        </b>
        se realizó una Jornada Integral de Salud dirigida a sus colaboradores. La evaluación contó con la participación de
        <b>
-        122 personas,
+        122 personas
        </b>
-       de las cuales el
+       , de las cuales el
        <b>
         75%
        </b>
        correspondió a
        <b>
-        mujeres,
+        mujeres
        </b>
-       equivalente a
+       , equivalente a
        <b>
-        91 colaboradoras,
+        91 colaboradoras
        </b>
-       y el
+       , y el
        <b>
         25%
        </b>
        a
        <b>
-        hombres,
+        hombres
        </b>
-       equivalente a
+       , equivalente a
        <b>
-        31 colaboradores.
+        31 colaboradores
        </b>
-       Su propósito fue obtener una lectura integral del estado de la población evaluada e identificar hallazgos y patrones relacionados con factores de riesgo asociados a las enfermedades no transmisibles.
+       . Su propósito fue obtener una lectura integral del estado de la población evaluada e identificar hallazgos y patrones relacionados con factores de riesgo asociados a las enfermedades no transmisibles.
       </p>
 </div>
 <div class="intro-card">
@@ -239,17 +195,17 @@ main{overflow:hidden} section{position:relative}
 <p class="intro-copy">
        Durante la jornada se aplicó el
        <b>
-        Functional Health Test de NUMED,
+        Functional Health Test de NUMED
        </b>
-       un modelo de evaluación integral que combina mediciones clínicas, antropométricas y funcionales. A través de este modelo se analizaron
+       , un modelo de evaluación integral que combina mediciones clínicas, antropométricas y funcionales. A través de este modelo se analizaron
        <b>
         once variables
        </b>
        que se organizaron en
        <b>
-        tres dimensiones complementarias:
+        tres dimensiones complementarias
        </b>
-        condición metabólica, condición cardiovascular y condición funcional.
+       : condición metabólica, condición cardiovascular y condición funcional.
       </p>
 </div>
 <div class="intro-card">
@@ -261,13 +217,13 @@ main{overflow:hidden} section{position:relative}
 <p class="intro-copy">
        A partir de estas tres condiciones, el reporte incorpora el
        <b>
-        Índice de Carga de Riesgo (ICR),
+        Índice de Carga de Riesgo (ICR)
        </b>
-       un indicador que permite identificar cuántas de ellas presentan alteraciones simultáneamente en cada colaborador. El ICR integra los hallazgos en una escala de
+       , un indicador que permite identificar cuántas de ellas presentan alteraciones simultáneamente en cada colaborador. El ICR integra los hallazgos en una escala de
        <b>
-        cero a tres condiciones alteradas,
+        cero a tres condiciones alteradas
        </b>
-       facilitando la segmentación de la población, la identificación de grupos prioritarios y la definición de distintos niveles de prevención, orientación, seguimiento o intervención.
+       , facilitando la segmentación de la población, la identificación de grupos prioritarios y la definición de distintos niveles de prevención, orientación, seguimiento o intervención.
       </p>
 </div>
 <div class="intro-card">
@@ -300,15 +256,6 @@ main{overflow:hidden} section{position:relative}
        Condición cardiovascular
       </span>
 </div>
-<div class="impact cardio-eval-intro" style="grid-template-columns:1fr;margin-top:20px;">
-<article>
-<b>¿Qué evalúa la condición cardiovascular?</b>
-<p>La condición cardiovascular del Functional Health Test integra tres variables complementarias: presión arterial sistólica, presión arterial diastólica y frecuencia cardíaca.</p>
-<p>La presión arterial representa la fuerza que ejerce la sangre sobre las paredes de los vasos sanguíneos. La cifra sistólica corresponde a la presión generada cuando el corazón se contrae, mientras que la diastólica refleja la presión existente entre los latidos. Su evaluación permite identificar cifras favorables, rangos que requieren prevención y resultados que ameritan confirmación y seguimiento.</p>
-<p>La frecuencia cardíaca indica el número de latidos registrados durante la evaluación y complementa la lectura de la respuesta cardiovascular. Dentro del Functional Health Test se clasifica como Buena, Normal o Deficiente y debe interpretarse junto con la presión arterial y las demás dimensiones evaluadas.</p>
-<p>La presión arterial persistentemente elevada puede aumentar el riesgo de complicaciones cardiovasculares, cerebrovasculares y renales y, con frecuencia, no produce síntomas evidentes. No obstante, las mediciones obtenidas durante esta jornada representan hallazgos de evaluación y no constituyen por sí solas un diagnóstico de hipertensión. Los resultados clasificados en grados de hipertensión requieren confirmación mediante evaluación profesional y mediciones posteriores.</p>
-</article>
-</div>
 <div class="cardio-context" style="margin-top:20px;padding:24px;border:1px solid #dce6ee;border-radius:18px;background:#f8fbfc;">
 <h3 style="margin:0 0 14px;color:var(--navy);font-size:20px;">Presión Arterial (Sistólica y Diastólica)</h3>
 <p style="margin:0 0 14px;color:var(--muted);line-height:1.75;">La presión arterial es un indicador clave de la salud cardiovascular y un importante factor de riesgo para enfermedades como hipertensión, infartos, accidentes cerebrovasculares e insuficiencia renal. Se mide en dos componentes: la presión sistólica y la diastólica. Valores elevados, incluso en rangos de prehipertensión, pueden causar daño progresivo sin mostrar síntomas, afectando el corazón, los vasos sanguíneos y los riñones. Por ello, su detección temprana es fundamental, especialmente en entornos laborales con estrés, sedentarismo o mala alimentación.</p>
@@ -325,7 +272,7 @@ main{overflow:hidden} section{position:relative}
          Óptima
         </span>
 <div class="track">
-<i style="width:34.4%;--target-width:34.4%">
+<i style="width:100%">
 </i>
 </div>
 <b>
@@ -340,7 +287,7 @@ main{overflow:hidden} section{position:relative}
          Normal
         </span>
 <div class="track">
-<i style="width:24.6%;--target-width:24.6%">
+<i style="width:71.4%">
 </i>
 </div>
 <b>
@@ -355,7 +302,7 @@ main{overflow:hidden} section{position:relative}
          Normal alta
         </span>
 <div class="track">
-<i style="width:23.8%;--target-width:23.8%">
+<i style="width:69.0%">
 </i>
 </div>
 <b>
@@ -370,7 +317,7 @@ main{overflow:hidden} section{position:relative}
          Hipertensión grado 1
         </span>
 <div class="track">
-<i style="width:13.9%;--target-width:13.9%">
+<i style="width:40.5%">
 </i>
 </div>
 <b>
@@ -385,7 +332,7 @@ main{overflow:hidden} section{position:relative}
          Hipertensión grado 2
         </span>
 <div class="track">
-<i style="width:3.3%;--target-width:3.3%">
+<i style="width:9.5%">
 </i>
 </div>
 <b>
@@ -405,7 +352,7 @@ main{overflow:hidden} section{position:relative}
          Óptima
         </span>
 <div class="track">
-<i style="width:41.0%;--target-width:41.0%">
+<i style="width:100%">
 </i>
 </div>
 <b>
@@ -420,7 +367,7 @@ main{overflow:hidden} section{position:relative}
          Normal
         </span>
 <div class="track">
-<i style="width:27.9%;--target-width:27.9%">
+<i style="width:68.0%">
 </i>
 </div>
 <b>
@@ -435,7 +382,7 @@ main{overflow:hidden} section{position:relative}
          Normal alta
         </span>
 <div class="track">
-<i style="width:11.5%;--target-width:11.5%">
+<i style="width:28.0%">
 </i>
 </div>
 <b>
@@ -450,7 +397,7 @@ main{overflow:hidden} section{position:relative}
          Hipertensión grado 1
         </span>
 <div class="track">
-<i style="width:17.2%;--target-width:17.2%">
+<i style="width:42.0%">
 </i>
 </div>
 <b>
@@ -465,7 +412,7 @@ main{overflow:hidden} section{position:relative}
          Hipertensión grado 2
         </span>
 <div class="track">
-<i style="width:1.6%;--target-width:1.6%">
+<i style="width:4.0%">
 </i>
 </div>
 <b>
@@ -480,7 +427,7 @@ main{overflow:hidden} section{position:relative}
          Hipertensión grado 3
         </span>
 <div class="track">
-<i style="width:0.8%;--target-width:0.8%">
+<i style="width:2.0%">
 </i>
 </div>
 <b>
@@ -506,7 +453,7 @@ main{overflow:hidden} section{position:relative}
 <div class="cardio-context">
 <h3>La frecuencia cardíaca</h3>
 <p>La frecuencia cardíaca en reposo (FCR) es un indicador esencial para evaluar la eficiencia del sistema cardiovascular y el nivel de condición física general. Refleja el número de latidos por minuto en reposo y expresa el equilibrio entre la demanda metabólica del organismo y la capacidad del corazón para responder. Una FCR elevada suele estar relacionada con sedentarismo, estrés crónico, mala calidad del sueño y baja adaptación al esfuerzo físico, mientras que valores en rangos saludables son característicos de un corazón más eficiente y de un organismo con mayor capacidad de recuperación.</p>
-<p>El sedentarismo —muy común en poblaciones laborales— deteriora la FCR al reducir la variabilidad cardíaca, disminuir la adaptación cardiovascular y favorecer procesos inflamatorios, lo que a largo plazo aumenta el riesgo de hipertensión, enfermedad coronaria, arritmias e incluso muerte prematura por causas cardiovasculares. En cambio, una FCR baja dentro de rangos saludables no solo refleja un buen estado físico, sino que también actúa como un marcador preventivo frente a enfermedades no transmisibles (ENT), al estar asociada con menor riesgo de eventos cardiovasculares y mejor tolerancia al estrés.</p>
+<p>El sedentarismo muy común en poblaciones laborales deteriora la FCR al reducir la variabilidad cardíaca, disminuir la adaptación cardiovascular y favorecer procesos inflamatorios, lo que a largo plazo aumenta el riesgo de hipertensión, enfermedad coronaria, arritmias e incluso muerte prematura por causas cardiovasculares. En cambio, una FCR baja dentro de rangos saludables no solo refleja un buen estado físico, sino que también actúa como un marcador preventivo frente a enfermedades no transmisibles (ENT), al estar asociada con menor riesgo de eventos cardiovasculares y mejor tolerancia al estrés.</p>
 <p>Por estas razones, la medición de la FCR en evaluaciones laborales constituye una herramienta simple y poderosa para detectar niveles deficientes de aptitud física y establecer programas personalizados de actividad física y manejo del estrés. Estas intervenciones no solo mejoran la salud cardiovascular y la calidad de vida de los colaboradores, sino que también reducen los costos y las incapacidades derivados de enfermedades prevenibles, fortaleciendo así la productividad y sostenibilidad de la organización.</p>
 </div>
 <article class="chart">
@@ -518,7 +465,7 @@ main{overflow:hidden} section{position:relative}
          Buena
         </span>
 <div class="track">
-<i style="width:63.1%;--target-width:63.1%">
+<i style="width:100%">
 </i>
 </div>
 <b>
@@ -533,7 +480,7 @@ main{overflow:hidden} section{position:relative}
          Normal
         </span>
 <div class="track">
-<i style="width:28.7%;--target-width:28.7%">
+<i style="width:45.5%">
 </i>
 </div>
 <b>
@@ -548,7 +495,7 @@ main{overflow:hidden} section{position:relative}
          Deficiente
         </span>
 <div class="track">
-<i style="width:8.2%;--target-width:8.2%">
+<i style="width:13.0%">
 </i>
 </div>
 <b>
@@ -569,10 +516,37 @@ main{overflow:hidden} section{position:relative}
 </div>
 </div>
 <div class="impact cardio-questions" style="grid-template-columns:1fr;">
-
-
+<article>
+<b>¿Qué evalúa la condición cardiovascular?</b>
+<p>La condición cardiovascular del Functional Health Test integra tres variables complementarias: presión arterial sistólica, presión arterial diastólica y frecuencia cardíaca.</p>
+<p>La presión arterial representa la fuerza que ejerce la sangre sobre las paredes de los vasos sanguíneos. La cifra sistólica corresponde a la presión generada cuando el corazón se contrae, mientras que la diastólica refleja la presión existente entre los latidos. Su evaluación permite identificar cifras favorables, rangos que requieren prevención y resultados que ameritan confirmación y seguimiento.</p>
+<p>La frecuencia cardíaca indica el número de latidos registrados durante la evaluación y complementa la lectura de la respuesta cardiovascular. Dentro del Functional Health Test se clasifica como Buena, Normal o Deficiente y debe interpretarse junto con la presión arterial y las demás dimensiones evaluadas.</p>
+<p>La presión arterial persistentemente elevada puede aumentar el riesgo de complicaciones cardiovasculares, cerebrovasculares y renales y, con frecuencia, no produce síntomas evidentes. No obstante, las mediciones obtenidas durante esta jornada representan hallazgos de evaluación y no constituyen por sí solas un diagnóstico de hipertensión. Los resultados clasificados en grados de hipertensión requieren confirmación mediante evaluación profesional y mediciones posteriores.</p>
+</article>
+<article>
+<b>¿Qué muestran los resultados?</b>
+<p>Los resultados reflejan un perfil cardiovascular mixto. En la presión arterial sistólica, el <strong>59.0% —72 colaboradores—</strong> se ubicó en las categorías Óptima o Normal. Sin embargo, el <strong>23.8% —29 colaboradores—</strong> fue clasificado en Normal alta y el <strong>17.2% —21 colaboradores—</strong> registró cifras correspondientes a Hipertensión grado 1 o grado 2.</p>
+<p>En la presión arterial diastólica, el <strong>68.9% —84 colaboradores—</strong> obtuvo una clasificación Óptima o Normal. Por otra parte, el <strong>11.5% —14 colaboradores—</strong> se ubicó en Normal alta y el <strong>19.7% —24 colaboradores—</strong> presentó alguna clasificación de hipertensión, incluyendo los grados 1, 2 y 3.</p>
+<p>La frecuencia cardíaca mostró una distribución predominantemente favorable: el <strong>63.1% —77 colaboradores—</strong> obtuvo una clasificación Buena y el <strong>28.7% —35 colaboradores—</strong> una clasificación Normal. El <strong>8.2% —10 colaboradores—</strong> fue clasificado en Deficiente según los parámetros del Functional Health Test.</p>
+<p>Al analizar conjuntamente la presión sistólica y la diastólica, el <strong>48.4% —59 colaboradores—</strong> tuvo ambas cifras en categorías Óptima o Normal. El <strong>22.1% —27 colaboradores—</strong> presentó al menos una cifra en Normal alta, sin alcanzar un grado de hipertensión, mientras que el <strong>29.5% —36 colaboradores—</strong> registró al menos una de las dos cifras en algún grado de hipertensión.</p>
+<p>Dentro de este último grupo, el <strong>5.7% de la población —7 colaboradores—</strong> presentó una clasificación de grado 2 o grado 3 en al menos uno de los componentes de la presión arterial. Este segmento requiere orientación y confirmación clínica prioritaria, sin que el resultado de la jornada deba interpretarse por sí solo como un diagnóstico definitivo.</p>
+<p>También se observó coexistencia entre las variables: el <strong>80% de los participantes con frecuencia cardíaca Deficiente —8 de 10 colaboradores—</strong> presentó simultáneamente al menos una cifra de presión arterial en Normal alta o en algún grado de hipertensión. Este hallazgo demuestra la importancia de interpretar la condición cardiovascular de manera integrada.</p>
+</article>
+<article>
+<b>¿Cómo impactan estas variables en la población?</b>
+<p>La distribución encontrada permite diferenciar distintas necesidades dentro de la población evaluada. Los colaboradores con resultados Óptimos o Normales representan una oportunidad para mantener condiciones favorables mediante educación, hábitos saludables y seguimiento preventivo.</p>
+<p>Las personas ubicadas en Normal alta constituyen un grupo relevante para la prevención. Aunque esta clasificación no equivale a hipertensión, señala la conveniencia de reforzar la vigilancia y promover medidas orientadas a evitar la progresión de las cifras.</p>
+<p>Los resultados clasificados en grados de hipertensión requieren una ruta diferente: repetición de las mediciones bajo condiciones estandarizadas, valoración por un profesional de salud y seguimiento de acuerdo con los hallazgos individuales. La prioridad debe ser mayor cuando se presentan grados 2 o 3 o cuando las alteraciones de presión coinciden con una frecuencia cardíaca Deficiente o con hallazgos metabólicos y funcionales.</p>
+<p>En consecuencia, el valor de esta evaluación no consiste únicamente en identificar una cifra elevada, sino en reconocer su intensidad, determinar si afecta uno o ambos componentes de la presión arterial y observar si coexiste con otras alteraciones en el mismo colaborador.</p>
+</article>
+<article>
+<b>¿Cómo puede impactar esta condición en la empresa?</b>
+<p>Los resultados no permiten afirmar que las alteraciones cardiovasculares estén causando ausentismo, disminución de productividad o aumento del gasto médico en BHD. Sí ofrecen, en cambio, una base objetiva para segmentar a la población y organizar diferentes niveles de prevención y seguimiento.</p>
+<p>A partir de estos hallazgos, BHD puede diferenciar entre colaboradores que requieren mantenimiento preventivo, personas en rangos de atención temprana y participantes que necesitan confirmación clínica o acompañamiento prioritario. Esta segmentación facilita orientar de manera más eficiente las acciones de educación, promoción de hábitos saludables, monitoreo, referimiento y reevaluación.</p>
+<p>La integración posterior de estos resultados con las condiciones metabólica y funcional, mediante el Índice de Carga de Riesgo, permitirá identificar a los colaboradores en quienes coinciden varias dimensiones alteradas. De esta forma, las decisiones de bienestar no dependerán de una única medición, sino de una lectura integral de las necesidades de cada persona.</p>
+</article>
 </div>
-</div><div class="condition metabolic-modern">
+</div><div class="condition">
 <div class="condition-head">
 <span>
        Condición metabólica
@@ -587,7 +561,7 @@ main{overflow:hidden} section{position:relative}
 </article>
 </div>
 <div class="charts">
-<article class="chart metric-chart numed-glass" data-metric="IMC">
+<article class="chart">
 <h3>
         IMC
        </h3>
@@ -596,7 +570,7 @@ main{overflow:hidden} section{position:relative}
          Infrapeso
         </span>
 <div class="track">
-<i style="width:1.6%;--target-width:1.6%">
+<i style="width:3.6%">
 </i>
 </div>
 <b>
@@ -611,7 +585,7 @@ main{overflow:hidden} section{position:relative}
          Normal
         </span>
 <div class="track">
-<i style="width:27.9%;--target-width:27.9%">
+<i style="width:60.7%">
 </i>
 </div>
 <b>
@@ -626,7 +600,7 @@ main{overflow:hidden} section{position:relative}
          Sobrepeso
         </span>
 <div class="track">
-<i style="width:45.9%;--target-width:45.9%">
+<i style="width:100.0%">
 </i>
 </div>
 <b>
@@ -641,7 +615,7 @@ main{overflow:hidden} section{position:relative}
          Obesidad
         </span>
 <div class="track">
-<i style="width:17.2%;--target-width:17.2%">
+<i style="width:37.5%">
 </i>
 </div>
 <b>
@@ -656,7 +630,7 @@ main{overflow:hidden} section{position:relative}
          Obesidad Tipo II
         </span>
 <div class="track">
-<i style="width:4.1%;--target-width:4.1%">
+<i style="width:8.9%">
 </i>
 </div>
 <b>
@@ -671,7 +645,7 @@ main{overflow:hidden} section{position:relative}
          Obesidad Tipo III
         </span>
 <div class="track">
-<i style="width:3.3%;--target-width:3.3%">
+<i style="width:7.1%">
 </i>
 </div>
 <b>
@@ -682,26 +656,28 @@ main{overflow:hidden} section{position:relative}
 </b>
 </div>
 </article>
-<article class="chart metabolic-reading insight-card" style="grid-column:1 / -1;">
+<article class="chart metabolic-reading" style="grid-column:1 / -1;">
 <h3>¿Qué muestran los resultados del IMC?</h3>
 <div style="display:grid;grid-template-columns:minmax(190px,260px) 1fr;gap:24px;align-items:start;">
 <div style="background:#f3f7f9;border-radius:18px;padding:24px;">
 <strong style="display:block;font-size:42px;line-height:1;color:#0b3558;">45.9%</strong>
-<span style="display:block;margin-top:10px;color:#6d829a;font-size:18px;font-weight:600;">Sobrepeso</span>
+<b style="display:block;margin-top:8px;font-size:18px;">56 colaboradores</b>
+<span style="display:block;margin-top:5px;color:#6d829a;">Sobrepeso</span>
 </div>
 <div>
-<p>La categoría con mayor concentración fue <b>Sobrepeso: 45.9%</b>.</p>
-<p>Al integrar el sobrepeso y los tres niveles de obesidad, el <b>70.5% de los colaboradores</b> presentó una clasificación asociada con sobrepeso. Dentro de este grupo, el <b>24.6% de toda la población</b> se ubicó en alguna categoría de obesidad y el <b>7.4%</b> correspondió específicamente a Obesidad Tipo II o Tipo III.</p>
-<p>Por otra parte, el <b>27.9%</b> presentó un IMC Normal y el <b>1.6%</b> fue clasificado en Infrapeso.</p>
-<p>La distribución muestra que el principal hallazgo del IMC no está únicamente en la presencia de obesidad. La elevada concentración en <b>Sobrepeso</b> representa una población relevante para acciones preventivas, con el propósito de acompañar sus hábitos y evitar la progresión hacia categorías de mayor complejidad.</p>
+<p>La categoría con mayor concentración fue <b>Sobrepeso: 45.9% —56 colaboradores—</b>.</p>
+<p>Adicionalmente, el <b>17.2% —21 colaboradores—</b> se ubicó en Obesidad, el <b>4.1% —5 colaboradores—</b> en Obesidad Tipo II y el <b>3.3% —4 colaboradores—</b> en Obesidad Tipo III.</p>
+<p>Al integrar el sobrepeso y los tres niveles de obesidad, el <b>70.5% —86 colaboradores—</b> presentó una clasificación asociada con exceso de peso. Dentro de este grupo, el <b>24.6% de toda la población —30 colaboradores—</b> se ubicó en alguna categoría de obesidad y el <b>7.4% —9 colaboradores—</b> correspondió específicamente a Obesidad Tipo II o Tipo III.</p>
+<p>Por otra parte, el <b>27.9% —34 colaboradores—</b> presentó un IMC Normal y el <b>1.6% —2 colaboradoras—</b> fue clasificado en Infrapeso.</p>
+<p>La distribución muestra que el principal hallazgo del IMC no está únicamente en la presencia de obesidad. La elevada concentración en Sobrepeso representa una población relevante para acciones preventivas, con el propósito de acompañar sus hábitos y evitar la progresión hacia categorías de mayor complejidad.</p>
 </div>
 </div>
 </article>
-<article class="chart metabolic-reading metric-chart numed-glass" data-metric="Porcentaje de grasa corporal" style="grid-column:1 / -1;">
+<article class="chart metabolic-reading" style="grid-column:1 / -1;">
 <h3>Porcentaje de grasa corporal</h3>
 <p>El porcentaje de grasa corporal estima qué proporción del peso total corresponde a tejido graso. Esta medición complementa el IMC porque permite diferenciar con mayor precisión la composición corporal y reconocer situaciones en las que una persona puede tener un peso clasificado como Normal, pero una proporción de grasa superior al rango esperado.</p>
 </article>
-<article class="chart metric-chart numed-glass" data-metric="Porcentaje de grasa corporal">
+<article class="chart">
 <h3>
         Porcentaje de grasa corporal
        </h3>
@@ -710,7 +686,7 @@ main{overflow:hidden} section{position:relative}
          Bajo
         </span>
 <div class="track">
-<i style="width:1.7%;--target-width:1.7%">
+<i style="width:4.3%">
 </i>
 </div>
 <b>
@@ -725,7 +701,7 @@ main{overflow:hidden} section{position:relative}
          Normal
         </span>
 <div class="track">
-<i style="width:27.3%;--target-width:27.3%">
+<i style="width:71.7%">
 </i>
 </div>
 <b>
@@ -740,7 +716,7 @@ main{overflow:hidden} section{position:relative}
          Alto
         </span>
 <div class="track">
-<i style="width:33.1%;--target-width:33.1%">
+<i style="width:87.0%">
 </i>
 </div>
 <b>
@@ -755,7 +731,7 @@ main{overflow:hidden} section{position:relative}
          Muy alto
         </span>
 <div class="track">
-<i style="width:38.0%;--target-width:38.0%">
+<i style="width:100.0%">
 </i>
 </div>
 <b>
@@ -766,19 +742,19 @@ main{overflow:hidden} section{position:relative}
 </b>
 </div>
 </article>
-<article class="chart metabolic-reading insight-card" style="grid-column:1 / -1;">
+<article class="chart metabolic-reading" style="grid-column:1 / -1;">
 <h3>¿Qué muestran los resultados de grasa corporal?</h3>
-<p>El <b>38.0%</b> presentó una clasificación de grasa corporal Muy alta, mientras que el <b>33.1%</b> se ubicó en la categoría Alta.</p>
-<p>En conjunto, el <b>71.1%</b> presentó grasa corporal Elevada. Esto convierte al porcentaje de grasa corporal en una de las variables con mayor concentración de resultados desfavorables dentro de la jornada.</p>
-<p>El <b>27.3%</b> se ubicó en la categoría Normal y el <b>1.7%</b> presentó una clasificación Baja.</p>
+<p>El <b>38.0% —46 colaboradores—</b> presentó una clasificación de grasa corporal Muy alta, mientras que el <b>33.1% —40 colaboradores—</b> se ubicó en la categoría Alta.</p>
+<p>En conjunto, el <b>71.1% —86 colaboradores—</b> presentó grasa corporal Alta o Muy alta. Esto convierte al porcentaje de grasa corporal en una de las variables con mayor concentración de resultados desfavorables dentro de la jornada.</p>
+<p>El <b>27.3% —33 colaboradores—</b> se ubicó en la categoría Normal y el <b>1.7% —2 colaboradoras—</b> presentó una clasificación Baja.</p>
 <p>Estos resultados muestran que una proporción considerable de la población evaluada presenta una composición corporal que requiere atención preventiva. También evidencian que el abordaje no debe limitarse al peso total, ya que el porcentaje de grasa aporta información que el IMC no identifica de manera directa.</p>
 </article>
-<article class="chart metabolic-reading metric-chart numed-glass" data-metric="Perímetro abdominal" style="grid-column:1 / -1;">
+<article class="chart metabolic-reading" style="grid-column:1 / -1;">
 <h3>Perímetro abdominal</h3>
 <p>El perímetro abdominal permite evaluar la concentración de tejido graso en la zona central del cuerpo. Esta variable complementa el IMC y el porcentaje de grasa corporal, ya que aporta información sobre la distribución de la grasa y permite diferenciar entre una composición corporal favorable y patrones de acumulación abdominal que requieren mayor vigilancia.</p>
 <p>La acumulación de grasa en la región abdominal se asocia con un perfil cardiometabólico menos favorable; sin embargo, el resultado de esta medición debe interpretarse como una señal para prevención y seguimiento, no como un diagnóstico individual.</p>
 </article>
-<article class="chart metric-chart numed-glass" data-metric="Perímetro abdominal">
+<article class="chart">
 <h3>
         Perímetro abdominal
        </h3>
@@ -787,7 +763,7 @@ main{overflow:hidden} section{position:relative}
          Normal
         </span>
 <div class="track">
-<i style="width:45.1%;--target-width:45.1%">
+<i style="width:100.0%">
 </i>
 </div>
 <b>
@@ -802,7 +778,7 @@ main{overflow:hidden} section{position:relative}
          Riesgo elevado
         </span>
 <div class="track">
-<i style="width:25.4%;--target-width:25.4%">
+<i style="width:56.4%">
 </i>
 </div>
 <b>
@@ -817,7 +793,7 @@ main{overflow:hidden} section{position:relative}
          Riesgo muy elevado
         </span>
 <div class="track">
-<i style="width:29.5%;--target-width:29.5%">
+<i style="width:65.5%">
 </i>
 </div>
 <b>
@@ -832,23 +808,37 @@ main{overflow:hidden} section{position:relative}
 <div class="impact metabolic-questions" style="grid-template-columns:1fr;">
 <article>
 <b>¿Qué muestran los resultados del perímetro abdominal?</b>
-<p>El <b>45.1% de los colaboradores</b> presentó un perímetro abdominal Normal.</p>
-<p>Por otra parte, el <b>25.4%</b> se ubicó en riesgo elevado y el <b>29.5%</b> en riesgo muy elevado.</p>
-<p>En conjunto, el <b>54.9% de los colaboradores</b> presentó algún nivel de riesgo relacionado con el perímetro abdominal. El hecho de que la categoría Riesgo muy elevado concentre una proporción superior a Riesgo elevado señala la existencia de un grupo que requiere orientación, seguimiento y valoración prioritaria de acuerdo con sus demás resultados.</p>
+<p>El <b>45.1% —55 colaboradores—</b> presentó un perímetro abdominal clasificado como Normal.</p>
+<p>Por otra parte, el <b>25.4% —31 colaboradores—</b> se ubicó en Riesgo elevado y el <b>29.5% —36 colaboradores—</b> en Riesgo muy elevado.</p>
+<p>En conjunto, el <b>54.9% —67 colaboradores—</b> presentó algún nivel de riesgo relacionado con el perímetro abdominal. El hecho de que la categoría Riesgo muy elevado concentre una proporción superior a Riesgo elevado señala la existencia de un grupo que requiere orientación, seguimiento y valoración prioritaria de acuerdo con sus demás resultados.</p>
 </article>
 <article>
 <b>¿Qué revela la estadística de las tres variables?</b>
 <p>El análisis conjunto muestra que las alteraciones de la composición corporal son ampliamente presentes en la población evaluada.</p>
-<p>El <b>85.2% de los colaboradores</b> presentó al menos una de las tres variables fuera de la categoría Normal. De este grupo, 102 colaboradores mostraron algún indicador de exceso de peso, grasa corporal elevada o riesgo abdominal, mientras que 2 colaboradoras presentaron infrapeso con grasa corporal baja.</p>
-<p>La coincidencia entre los indicadores también es relevante. El <b>48.4% de toda la población</b> presentó simultáneamente:</p>
+<p>El <b>85.2% —104 colaboradores—</b> presentó al menos una de las tres variables fuera de la categoría Normal. De este grupo, 102 colaboradores mostraron algún indicador de exceso de peso, grasa corporal elevada o riesgo abdominal, mientras que 2 colaboradoras presentaron infrapeso con grasa corporal baja.</p>
+<p>La coincidencia entre los indicadores también es relevante. El <b>48.4% de toda la población —59 colaboradores—</b> presentó simultáneamente:</p>
 <p><b>Sobrepeso u obesidad + grasa corporal alta o muy alta + perímetro abdominal con riesgo elevado o muy elevado.</b></p>
 <p>Este grupo representa la mayor concentración de hallazgos dentro de la condición metabólica y requiere una lectura integral, especialmente al combinarse posteriormente con los resultados cardiovasculares y funcionales.</p>
-<p>En contraste, únicamente el <b>14.8%</b> se ubicó simultáneamente en la categoría Normal para IMC, grasa corporal y perímetro abdominal.</p>
-<p>Otro hallazgo de especial valor se observó entre las personas con IMC Normal. De los 34 colaboradores ubicados en esta categoría, el <b>47.1%</b> presentó una alteración adicional: 12 tenían grasa corporal Alta o Muy alta y 4 registraron Riesgo elevado o Riesgo muy elevado en el perímetro abdominal.</p>
+<p>En contraste, únicamente el <b>14.8% —18 colaboradores—</b> se ubicó simultáneamente en la categoría Normal para IMC, grasa corporal y perímetro abdominal.</p>
+<p>Otro hallazgo de especial valor se observó entre las personas con IMC Normal. De los 34 colaboradores ubicados en esta categoría, el <b>47.1% —16 colaboradores—</b> presentó una alteración adicional: 12 tenían grasa corporal Alta o Muy alta y 4 registraron Riesgo elevado o Riesgo muy elevado en el perímetro abdominal.</p>
 <p>Esto demuestra que el IMC no debe utilizarse como único criterio para interpretar la condición metabólica. Una persona puede presentar un peso proporcional a su estatura y, al mismo tiempo, mostrar una proporción elevada de grasa corporal o una distribución abdominal que requiere atención.</p>
 </article>
-
-
+<article>
+<b>¿Cómo impactan estas variables en la población?</b>
+<p>Los resultados permiten identificar necesidades diferentes dentro de la población evaluada.</p>
+<p>Los colaboradores con las tres variables en categorías normales representan un grupo para mantenimiento preventivo, promoción de hábitos saludables y seguimiento periódico.</p>
+<p>Las personas con una sola variable alterada constituyen una oportunidad para realizar intervenciones tempranas y evitar la progresión de los hallazgos. En estos casos, las recomendaciones deben responder a la variable específica identificada y no depender únicamente del peso corporal.</p>
+<p>Los colaboradores en quienes coinciden dos o tres variables requieren una atención más integral. La presencia simultánea de exceso de peso, grasa corporal elevada y riesgo abdominal puede justificar orientación nutricional, promoción de actividad física, fortalecimiento muscular, revisión de hábitos y seguimiento profesional de acuerdo con el perfil individual.</p>
+<p>También debe reconocerse que no todas las alteraciones requieren pérdida de peso. Las personas clasificadas en Infrapeso y grasa corporal Baja presentan un perfil diferente y necesitan una evaluación individual orientada a determinar sus necesidades nutricionales, funcionales y clínicas.</p>
+<p>La relevancia de estos hallazgos aumenta cuando las alteraciones metabólicas coinciden con cifras cardiovasculares fuera de los rangos favorables o con limitaciones de fuerza, flexibilidad y resistencia. Esta coexistencia será considerada posteriormente mediante el Índice de Carga de Riesgo.</p>
+</article>
+<article>
+<b>¿Cómo puede impactar esta condición en la empresa?</b>
+<p>Los resultados no permiten afirmar que las alteraciones metabólicas estén provocando ausentismo, disminución de la productividad o incremento del gasto médico en BHD. Sí ofrecen una base objetiva para comprender la composición de la población evaluada y organizar acciones de bienestar de acuerdo con diferentes niveles de necesidad.</p>
+<p>La información permite diferenciar entre colaboradores que requieren mantenimiento preventivo, personas con oportunidades de intervención temprana y grupos que necesitan un acompañamiento más integral o prioritario.</p>
+<p>A partir de esta segmentación, pueden desarrollarse acciones relacionadas con educación nutricional, actividad física, fortalecimiento, modificación de hábitos, seguimiento profesional y reevaluación periódica. Estas iniciativas no deben plantearse como una campaña general para bajar de peso, sino como rutas diferenciadas de acompañamiento según los hallazgos de cada colaborador.</p>
+<p>La integración de la condición metabólica con las condiciones cardiovascular y funcional permitirá identificar en qué personas coinciden varias dimensiones alteradas. De esta manera, BHD podrá orientar sus acciones de bienestar hacia las necesidades observadas y priorizar a la población que presenta una mayor carga conjunta de hallazgos.</p>
+</article>
 </div>
 </div><div class="condition functional-condition">
 <div class="condition-head functional-head">
@@ -874,7 +864,7 @@ main{overflow:hidden} section{position:relative}
          Muy pobre
         </span>
 <div class="track">
-<i style="width:51.7%;--target-width:51.7%">
+<i style="width:100.0%">
 </i>
 </div>
 <b>
@@ -889,7 +879,7 @@ main{overflow:hidden} section{position:relative}
          Pobre
         </span>
 <div class="track">
-<i style="width:22.5%;--target-width:22.5%">
+<i style="width:43.5%">
 </i>
 </div>
 <b>
@@ -904,7 +894,7 @@ main{overflow:hidden} section{position:relative}
          Promedio
         </span>
 <div class="track">
-<i style="width:24.2%;--target-width:24.2%">
+<i style="width:46.8%">
 </i>
 </div>
 <b>
@@ -919,7 +909,7 @@ main{overflow:hidden} section{position:relative}
          Excelente
         </span>
 <div class="track">
-<i style="width:1.7%;--target-width:1.7%">
+<i style="width:3.2%">
 </i>
 </div>
 <b>
@@ -931,9 +921,9 @@ main{overflow:hidden} section{position:relative}
 </div>
 </article>
 <article class="functional-analysis"><h4>¿Qué muestran los resultados de flexibilidad?</h4>
-<p>La categoría con mayor concentración fue <b>Muy pobre: 51.7%</b>. Adicionalmente, el <b>22.5%</b> se ubicó en la categoría Pobre.</p>
-<p>Al integrar ambas clasificaciones, el <b>74.2%</b> presentó un resultado de flexibilidad Muy pobre o Pobre. Esto convierte la flexibilidad en una de las principales áreas de oportunidad dentro de la condición funcional.</p>
-<p>Por otra parte, el <b>24.2%</b> obtuvo una clasificación Promedio y el <b>1.7%</b> se ubicó en Excelente.</p>
+<p>La categoría con mayor concentración fue <b>Muy pobre: 51.7% —62 colaboradores—</b>. Adicionalmente, el <b>22.5% —27 colaboradores—</b> se ubicó en la categoría Pobre.</p>
+<p>Al integrar ambas clasificaciones, el <b>74.2% —89 colaboradores—</b> presentó un resultado de flexibilidad Muy pobre o Pobre. Esto convierte la flexibilidad en una de las principales áreas de oportunidad dentro de la condición funcional.</p>
+<p>Por otra parte, el <b>24.2% —29 colaboradores—</b> obtuvo una clasificación Promedio y el <b>1.7% —2 colaboradores—</b> se ubicó en Excelente.</p>
 <p>La distribución evidencia que las oportunidades relacionadas con movilidad no se concentran en un grupo pequeño, sino que están presentes en una proporción amplia de la población evaluada. Este resultado justifica considerar acciones progresivas de movilidad, educación sobre el movimiento y seguimiento funcional.</p>
 </article>
 </div>
@@ -949,7 +939,7 @@ main{overflow:hidden} section{position:relative}
          Débil
         </span>
 <div class="track">
-<i style="width:57.4%;--target-width:57.4%">
+<i style="width:100.0%">
 </i>
 </div>
 <b>
@@ -964,7 +954,7 @@ main{overflow:hidden} section{position:relative}
          Normal
         </span>
 <div class="track">
-<i style="width:37.7%;--target-width:37.7%">
+<i style="width:65.7%">
 </i>
 </div>
 <b>
@@ -979,7 +969,7 @@ main{overflow:hidden} section{position:relative}
          Fuerte
         </span>
 <div class="track">
-<i style="width:4.9%;--target-width:4.9%">
+<i style="width:8.6%">
 </i>
 </div>
 <b>
@@ -991,8 +981,8 @@ main{overflow:hidden} section{position:relative}
 </div>
 </article>
 <article class="functional-analysis"><h4>¿Qué muestran los resultados de fuerza?</h4>
-<p>La categoría con mayor concentración fue <b>Débil: 57.4%</b>.</p>
-<p>El <b>37.7%</b> presentó una clasificación Normal y el <b>4.9%</b> fue clasificado como Fuerte.</p>
+<p>La categoría con mayor concentración fue <b>Débil: 57.4% —70 colaboradores—</b>.</p>
+<p>El <b>37.7% —46 colaboradores—</b> presentó una clasificación Normal y el <b>4.9% —6 colaboradores—</b> fue clasificado como Fuerte.</p>
 <p>El hecho de que más de la mitad de la población haya obtenido una clasificación Débil señala una oportunidad importante para incorporar estrategias de fortalecimiento progresivo y adaptado a las capacidades individuales.</p>
 <p>Este hallazgo no debe interpretarse como incapacidad para realizar las tareas habituales. Indica que, según los parámetros de la prueba aplicada, existe una proporción relevante de participantes que puede beneficiarse de acciones orientadas a mejorar o mantener la fuerza muscular.</p>
 </article>
@@ -1009,7 +999,7 @@ main{overflow:hidden} section{position:relative}
          Malo
         </span>
 <div class="track">
-<i style="width:4.6%;--target-width:4.6%">
+<i style="width:10.4%">
 </i>
 </div>
 <b>
@@ -1024,7 +1014,7 @@ main{overflow:hidden} section{position:relative}
          Debajo del promedio
         </span>
 <div class="track">
-<i style="width:18.3%;--target-width:18.3%">
+<i style="width:41.7%">
 </i>
 </div>
 <b>
@@ -1039,7 +1029,7 @@ main{overflow:hidden} section{position:relative}
          Promedio
         </span>
 <div class="track">
-<i style="width:44.0%;--target-width:44.0%">
+<i style="width:100.0%">
 </i>
 </div>
 <b>
@@ -1054,7 +1044,7 @@ main{overflow:hidden} section{position:relative}
          Sobre el promedio
         </span>
 <div class="track">
-<i style="width:17.4%;--target-width:17.4%">
+<i style="width:39.6%">
 </i>
 </div>
 <b>
@@ -1069,7 +1059,7 @@ main{overflow:hidden} section{position:relative}
          Bueno
         </span>
 <div class="track">
-<i style="width:10.1%;--target-width:10.1%">
+<i style="width:22.9%">
 </i>
 </div>
 <b>
@@ -1084,7 +1074,7 @@ main{overflow:hidden} section{position:relative}
          Excelente
         </span>
 <div class="track">
-<i style="width:5.5%;--target-width:5.5%">
+<i style="width:12.5%">
 </i>
 </div>
 <b>
@@ -1096,9 +1086,9 @@ main{overflow:hidden} section{position:relative}
 </div>
 </article>
 <article class="functional-analysis"><h4>¿Qué muestran los resultados de resistencia en flexiones?</h4>
-<p>La categoría con mayor concentración fue <b>Promedio: 44.0%</b>.</p>
-<p>El <b>17.4%</b> se ubicó Sobre el promedio, el <b>10.1%</b> en Bueno y el <b>5.5%</b> en Excelente. En conjunto, el <b>77.1%</b> obtuvo una clasificación Promedio o superior.</p>
-<p>Por otra parte, el <b>18.3%</b> se ubicó Debajo del promedio y el <b>4.6%</b> en Malo. Al integrar ambas categorías, el <b>22.9%</b> presentó un resultado desfavorable en esta prueba.</p>
+<p>La categoría con mayor concentración fue <b>Promedio: 44.0% —48 colaboradores—</b>.</p>
+<p>El <b>17.4% —19 colaboradores—</b> se ubicó Sobre el promedio, el <b>10.1% —11 colaboradores—</b> en Bueno y el <b>5.5% —6 colaboradores—</b> en Excelente. En conjunto, el <b>77.1% —84 colaboradores—</b> obtuvo una clasificación Promedio o superior.</p>
+<p>Por otra parte, el <b>18.3% —20 colaboradores—</b> se ubicó Debajo del promedio y el <b>4.6% —5 colaboradores—</b> en Malo. Al integrar ambas categorías, el <b>22.9% —25 colaboradores—</b> presentó un resultado desfavorable en esta prueba.</p>
 <p>La distribución muestra un comportamiento predominantemente favorable o intermedio. Sin embargo, existe un grupo específico que requiere orientación y fortalecimiento progresivo, particularmente cuando este resultado coincide con una clasificación Débil en fuerza o con alteraciones en otras pruebas de resistencia.</p>
 </article>
 </div>
@@ -1114,7 +1104,7 @@ main{overflow:hidden} section{position:relative}
          Muy malo
         </span>
 <div class="track">
-<i style="width:23.5%;--target-width:23.5%">
+<i style="width:93.1%">
 </i>
 </div>
 <b>
@@ -1129,7 +1119,7 @@ main{overflow:hidden} section{position:relative}
          Malo
         </span>
 <div class="track">
-<i style="width:25.2%;--target-width:25.2%">
+<i style="width:100.0%">
 </i>
 </div>
 <b>
@@ -1144,7 +1134,7 @@ main{overflow:hidden} section{position:relative}
          Debajo del promedio
         </span>
 <div class="track">
-<i style="width:15.7%;--target-width:15.7%">
+<i style="width:62.1%">
 </i>
 </div>
 <b>
@@ -1159,7 +1149,7 @@ main{overflow:hidden} section{position:relative}
          Promedio
         </span>
 <div class="track">
-<i style="width:16.5%;--target-width:16.5%">
+<i style="width:65.5%">
 </i>
 </div>
 <b>
@@ -1174,7 +1164,7 @@ main{overflow:hidden} section{position:relative}
          Sobre el promedio
         </span>
 <div class="track">
-<i style="width:6.1%;--target-width:6.1%">
+<i style="width:24.1%">
 </i>
 </div>
 <b>
@@ -1189,7 +1179,7 @@ main{overflow:hidden} section{position:relative}
          Bueno
         </span>
 <div class="track">
-<i style="width:12.2%;--target-width:12.2%">
+<i style="width:48.3%">
 </i>
 </div>
 <b>
@@ -1204,7 +1194,7 @@ main{overflow:hidden} section{position:relative}
          Excelente
         </span>
 <div class="track">
-<i style="width:0.9%;--target-width:0.9%">
+<i style="width:3.4%">
 </i>
 </div>
 <b>
@@ -1216,9 +1206,9 @@ main{overflow:hidden} section{position:relative}
 </div>
 </article>
 <article class="functional-analysis"><h4>¿Qué muestran los resultados de resistencia abdominal?</h4>
-<p>El <b>25.2% —29 colaboradores—</b> obtuvo una clasificación Mala y el <b>23.5% —27 colaboradores—</b> una clasificación Muy mala. Adicionalmente, el <b>15.7% —18 colaboradores—</b> se ubicó Debajo del promedio.</p>
-<p>Al integrar estas tres categorías, el <b>64.3% —74 colaboradores—</b> presentó un resultado desfavorable en la prueba de resistencia abdominal. Esta fue la prueba de resistencia con mayor concentración de clasificaciones por debajo del nivel Promedio.</p>
-<p>En contraste, el <b>16.5% —19 colaboradores—</b> se ubicó en Promedio, el <b>6.1% —7 colaboradores—</b> Sobre el promedio, el <b>12.2% —14 colaboradores—</b> en Bueno y el <b>0.9% —1 colaborador—</b> en Excelente.</p>
+<p>El <b>25.2%</b> obtuvo una clasificación Mala y el <b>23.5%</b> una clasificación Muy mala. Adicionalmente, el <b>15.7%</b> se ubicó Debajo del promedio.</p>
+<p>Al integrar estas tres categorías, el <b>64.3%</b> presentó un resultado desfavorable en la prueba de resistencia abdominal. Esta fue la prueba de resistencia con mayor concentración de clasificaciones por debajo del nivel Promedio.</p>
+<p>En contraste, el <b>16.5%</b> se ubicó en Promedio, el <b>6.1%</b> Sobre el promedio, el <b>12.2%</b> en Bueno y el <b>0.9%</b> en Excelente.</p>
 <p>Los resultados señalan una oportunidad relevante para incorporar ejercicios progresivos de fortalecimiento y resistencia, ajustados a las características y condiciones individuales de los colaboradores.</p>
 </article>
 </div>
@@ -1234,7 +1224,7 @@ main{overflow:hidden} section{position:relative}
          Muy malo
         </span>
 <div class="track">
-<i style="width:2.5%;--target-width:2.5%">
+<i style="width:5.5%">
 </i>
 </div>
 <b>
@@ -1249,7 +1239,7 @@ main{overflow:hidden} section{position:relative}
          Malo
         </span>
 <div class="track">
-<i style="width:5.0%;--target-width:5.0%">
+<i style="width:10.9%">
 </i>
 </div>
 <b>
@@ -1264,7 +1254,7 @@ main{overflow:hidden} section{position:relative}
          Debajo del promedio
         </span>
 <div class="track">
-<i style="width:5.0%;--target-width:5.0%">
+<i style="width:10.9%">
 </i>
 </div>
 <b>
@@ -1279,7 +1269,7 @@ main{overflow:hidden} section{position:relative}
          Promedio
         </span>
 <div class="track">
-<i style="width:8.4%;--target-width:8.4%">
+<i style="width:18.2%">
 </i>
 </div>
 <b>
@@ -1294,7 +1284,7 @@ main{overflow:hidden} section{position:relative}
          Sobre el promedio
         </span>
 <div class="track">
-<i style="width:10.9%;--target-width:10.9%">
+<i style="width:23.6%">
 </i>
 </div>
 <b>
@@ -1309,7 +1299,7 @@ main{overflow:hidden} section{position:relative}
          Bueno
         </span>
 <div class="track">
-<i style="width:21.8%;--target-width:21.8%">
+<i style="width:47.3%">
 </i>
 </div>
 <b>
@@ -1324,7 +1314,7 @@ main{overflow:hidden} section{position:relative}
          Excelente
         </span>
 <div class="track">
-<i style="width:46.2%;--target-width:46.2%">
+<i style="width:100.0%">
 </i>
 </div>
 <b>
@@ -1336,9 +1326,9 @@ main{overflow:hidden} section{position:relative}
 </div>
 </article>
 <article class="functional-analysis"><h4>¿Qué muestran los resultados de resistencia en sentadillas?</h4>
-<p>La categoría con mayor concentración fue <b>Excelente: 46.2%</b>.</p>
-<p>El <b>21.8%</b> se ubicó en Bueno, el <b>10.9%</b> Sobre el promedio y el <b>8.4%</b> en Promedio. En conjunto, el <b>87.4%</b> obtuvo una clasificación Promedio o superior.</p>
-<p>Por otra parte, el <b>5.0%</b> se ubicó Debajo del promedio, el <b>5.0%</b> en Malo y el <b>2.5%</b> en Muy malo. Estas tres categorías representan conjuntamente el <b>12.6%</b>.</p>
+<p>La categoría con mayor concentración fue <b>Excelente: 46.2% —55 colaboradores—</b>.</p>
+<p>El <b>21.8% —26 colaboradores—</b> se ubicó en Bueno, el <b>10.9% —13 colaboradores—</b> Sobre el promedio y el <b>8.4% —10 colaboradores—</b> en Promedio. En conjunto, el <b>87.4% —104 colaboradores—</b> obtuvo una clasificación Promedio o superior.</p>
+<p>Por otra parte, el <b>5.0% —6 colaboradores—</b> se ubicó Debajo del promedio, el <b>5.0% —6 colaboradores—</b> en Malo y el <b>2.5% —3 colaboradores—</b> en Muy malo. Estas tres categorías representan conjuntamente el <b>12.6% —15 colaboradores—</b>.</p>
 <p>La resistencia en sentadillas presentó el comportamiento más favorable entre las pruebas funcionales. Este resultado constituye una fortaleza relativa de la población y debe considerarse tanto para mantener las capacidades observadas como para apoyar programas progresivos que integren movilidad, fuerza y resistencia.</p>
 </article>
 </div>
@@ -1351,19 +1341,27 @@ main{overflow:hidden} section{position:relative}
 <div><strong>43.4%</strong><span>53 colaboradores</span><small>Tres o más variables desfavorables</small></div>
 <div><strong>32.0%</strong><span>39 colaboradores</span><small>Flexibilidad + fuerza + resistencia abdominal</small></div>
 </div>
-<p>Al analizar conjuntamente las pruebas realizadas, el <b>92.6%</b> presentó al menos una clasificación desfavorable en alguna de las variables funcionales evaluadas.</p>
+<p>Al analizar conjuntamente las pruebas realizadas, el <b>92.6% —113 colaboradores—</b> presentó al menos una clasificación desfavorable en alguna de las variables funcionales evaluadas.</p>
 <p>Este porcentaje no significa que el 92.6% de la población tenga una incapacidad funcional. Indica que, dentro de las pruebas que cada persona realizó, se identificó al menos un componente con oportunidad de mejora.</p>
-<p>La coexistencia de resultados también es relevante: el <b>71.3%</b> presentó dos o más variables funcionales con clasificaciones desfavorables y el <b>43.4%</b> presentó tres o más.</p>
-<p>Adicionalmente, el <b>32.0% de toda la población</b> presentó simultáneamente flexibilidad Muy pobre o Pobre, fuerza Débil y resistencia abdominal Debajo del promedio, Mala o Muy mala.</p>
+<p>La coexistencia de resultados también es relevante: el <b>71.3% —87 colaboradores—</b> presentó dos o más variables funcionales con clasificaciones desfavorables y el <b>43.4% —53 colaboradores—</b> presentó tres o más.</p>
+<p>Adicionalmente, el <b>32.0% de toda la población —39 colaboradores—</b> presentó simultáneamente flexibilidad Muy pobre o Pobre, fuerza Débil y resistencia abdominal Debajo del promedio, Mala o Muy mala.</p>
 <p>Esta combinación representa uno de los patrones funcionales más relevantes de la jornada. Su presencia señala que el abordaje no debe limitarse a trabajar una sola capacidad, sino considerar programas que integren movilidad, fortalecimiento y resistencia de manera progresiva.</p>
 <p>Los resultados también demuestran que una persona puede presentar desempeños diferentes según la prueba. Por ejemplo, una clasificación favorable en sentadillas no descarta oportunidades en flexibilidad, fuerza o resistencia abdominal. Por esta razón, la condición funcional debe interpretarse como una dimensión integrada y no a partir de una única medición.</p>
 </article>
-
+<article class="functional-impact">
+<h3>¿Cómo impacta la condición funcional en la población?</h3>
+<p>La condición funcional aporta información sobre cómo los colaboradores responden a diferentes demandas físicas dentro del protocolo de evaluación. Los hallazgos permiten identificar tanto capacidades favorables que deben mantenerse como componentes que pueden beneficiarse de orientación y entrenamiento progresivo.</p>
+<p>Los colaboradores con resultados Promedio o superiores en todas las pruebas realizadas representan una oportunidad para mantener sus capacidades mediante actividad física regular, movilidad y fortalecimiento preventivo.</p>
+<p>Las personas con una sola clasificación desfavorable pueden beneficiarse de intervenciones dirigidas al componente específico identificado. Una alteración aislada de flexibilidad, por ejemplo, no requiere necesariamente el mismo abordaje que una clasificación Débil en fuerza o un resultado bajo de resistencia abdominal.</p>
+<p>Cuando coinciden varias clasificaciones desfavorables, resulta conveniente realizar una orientación más integral, considerando movilidad, fuerza y resistencia. Las recomendaciones deben adaptarse a las capacidades, antecedentes y condiciones de cada persona y progresar de manera gradual. Las guías de actividad física para adultos recomiendan combinar movimiento aeróbico con actividades de fortalecimiento muscular y ajustar la práctica a las capacidades individuales.</p>
+<p>La intervención no debe perseguir únicamente un mejor resultado en la prueba. Su propósito debe ser favorecer una mayor capacidad para moverse, realizar actividad física y mantener las capacidades funcionales a lo largo del tiempo.</p>
+</article>
 </div></section>
 <section class="icr-section" id="icr">
 <div class="section-head">
 <div class="eyebrow" style="color:var(--blue)">02 · Índice de Carga de Riesgo</div>
-<p class="icr-lead">El ICR es una herramienta de salud pública y salud ocupacional que permite estratificar una población, priorizar recursos y diseñar intervenciones por grupos. Es el mismo principio que usan los programas de wellness corporativo de Fortune 500, los sistemas de salud preventiva de la OPS/OMS y los programas de salud ocupacional del IMSS en México.</p>
+<h2>Resumen de las 11 variables evaluadas</h2>
+<p class="icr-lead">El Índice de Carga de Riesgo (ICR) cuenta cuántas de las 11 variables del Functional Health Test presentan hallazgos fuera de los rangos definidos en una misma persona. Cada variable aporta como máximo un punto, independientemente de la severidad de su clasificación. Las condiciones metabólica, cardiovascular y funcional organizan la interpretación, pero la puntuación se determina por variables afectadas.</p>
 </div>
 <div class="icr-kpis">
 <article class="icr-kpi safe"><strong>0.8%</strong><span>Sin riesgo</span><small>1 colaborador · ICR = 0</small></article>
@@ -1382,6 +1380,9 @@ main{overflow:hidden} section{position:relative}
 </table>
 </div>
 <div class="icr-highlight"><strong>87.7% · 107 colaboradores</strong><p>El principal hallazgo del ICR es que 107 de los 122 colaboradores evaluados acumulan tres o más variables afectadas. Esto representa una carga acumulativa de hallazgos y no equivale, por sí sola, a un diagnóstico clínico ni a que las tres condiciones estén necesariamente alteradas.</p></div>
+<div class="icr-method">
+<article><h3>¿Cómo se calcula?</h3><p>El ICR utiliza las 11 variables disponibles: tres metabólicas, tres cardiovasculares y cinco funcionales. Cada variable definida como afectada suma <b>1 punto</b>; una clasificación favorable suma <b>0 puntos</b>. La severidad de una misma variable no agrega puntos adicionales.</p><p>El ICR es una herramienta interna de segmentación preventiva construida a partir del Functional Health Test. No constituye un diagnóstico clínico ni una probabilidad validada de enfermedad.</p></article>
+</div>
 </section>
 <section class="collaborators-section" id="colaboradores">
 <div class="section-head">
@@ -1529,10 +1530,10 @@ main{overflow:hidden} section{position:relative}
 </div>
 <div class="cardio-context" style="margin-top:20px;padding:28px;border:1px solid #dce6ee;border-radius:20px;background:#f8fbfc;">
 <p>La Jornada Integral de Salud realizada por NUMED Care permitió identificar un panorama caracterizado por una coexistencia relevante de hallazgos metabólicos, cardiovasculares y funcionales en la población evaluada. Los resultados muestran que las principales oportunidades de intervención no se concentran en una única variable, sino en la combinación de diferentes dimensiones de salud y condición física.</p>
-<p>En la <b>condición metabólica</b> se identificó una de las principales áreas de oportunidad. El <b>70.5% de los colaboradores</b> presentó una clasificación de exceso de peso según el IMC y el <b>71.1%</b> registró un porcentaje de grasa corporal Alto o Muy alto. Asimismo, el <b>54.9%</b> presentó Riesgo elevado o Riesgo muy elevado según el perímetro abdominal. Al integrar las tres mediciones, el <b>85.2%</b> presentó al menos una variable fuera de la categoría Normal y el <b>48.4%</b> concentró simultáneamente exceso de peso, grasa corporal elevada y riesgo abdominal.</p>
-<p>La <b>condición cardiovascular</b> presentó un comportamiento más heterogéneo. La frecuencia cardíaca mostró una distribución predominantemente favorable, mientras que la presión arterial permitió identificar grupos que requieren diferentes niveles de prevención y seguimiento. Al considerar conjuntamente la presión sistólica y diastólica, el <b>29.5%</b> presentó al menos una cifra clasificada en algún grado de hipertensión y un <b>5.7%</b> registró grado 2 o grado 3 en al menos uno de sus componentes. Estos resultados requieren confirmación mediante evaluación profesional y mediciones posteriores y no constituyen, por sí solos, un diagnóstico de hipertensión.</p>
-<p>En la <b>condición funcional</b>, las mayores oportunidades se concentraron en flexibilidad, fuerza muscular y resistencia abdominal. El <b>74.2%</b> presentó flexibilidad Pobre o Muy pobre, el <b>57.4%</b> obtuvo una clasificación Débil en fuerza y el <b>64.3%</b> presentó resultados desfavorables en resistencia abdominal. En contraste, la resistencia en flexiones y, especialmente, la resistencia en sentadillas mostraron comportamientos comparativamente más favorables. La estadística identificó que el <b>92.6%</b> presentó al menos una oportunidad de mejora funcional y el <b>43.4%</b> acumuló tres o más clasificaciones desfavorables, sin que estos resultados impliquen incapacidad funcional o laboral.</p>
-<p>En conjunto, los hallazgos muestran que las necesidades observadas trascienden variables aisladas. El <b>Índice de Carga de Riesgo (ICR)</b> confirma esta coexistencia: en los 122 colaboradores evaluados, el <b>87.7%</b> acumuló tres o más variables afectadas, el <b>11.5%</b> presentó una o dos variables afectadas y el <b>0.8%</b> obtuvo un ICR de 0.</p>
+<p>En la <b>condición metabólica</b> se identificó una de las principales áreas de oportunidad. El <b>70.5% —86 colaboradores—</b> presentó una clasificación de exceso de peso según el IMC y el <b>71.1% —86 colaboradores—</b> registró un porcentaje de grasa corporal Alto o Muy alto. Asimismo, el <b>54.9% —67 colaboradores—</b> presentó Riesgo elevado o Riesgo muy elevado según el perímetro abdominal. Al integrar las tres mediciones, el <b>85.2% —104 colaboradores—</b> presentó al menos una variable fuera de la categoría Normal y el <b>48.4% —59 colaboradores—</b> concentró simultáneamente exceso de peso, grasa corporal elevada y riesgo abdominal.</p>
+<p>La <b>condición cardiovascular</b> presentó un comportamiento más heterogéneo. La frecuencia cardíaca mostró una distribución predominantemente favorable, mientras que la presión arterial permitió identificar grupos que requieren diferentes niveles de prevención y seguimiento. Al considerar conjuntamente la presión sistólica y diastólica, el <b>29.5% —36 colaboradores—</b> presentó al menos una cifra clasificada en algún grado de hipertensión y un <b>5.7% —7 colaboradores—</b> registró grado 2 o grado 3 en al menos uno de sus componentes. Estos resultados requieren confirmación mediante evaluación profesional y mediciones posteriores y no constituyen, por sí solos, un diagnóstico de hipertensión.</p>
+<p>En la <b>condición funcional</b>, las mayores oportunidades se concentraron en flexibilidad, fuerza muscular y resistencia abdominal. El <b>74.2% —89 colaboradores—</b> presentó flexibilidad Pobre o Muy pobre, el <b>57.4% —70 colaboradores—</b> obtuvo una clasificación Débil en fuerza y el <b>64.3% —74 colaboradores—</b> presentó resultados desfavorables en resistencia abdominal. En contraste, la resistencia en flexiones y, especialmente, la resistencia en sentadillas mostraron comportamientos comparativamente más favorables. La estadística identificó que el <b>92.6% —113 colaboradores—</b> presentó al menos una oportunidad de mejora funcional y el <b>43.4% —53 colaboradores—</b> acumuló tres o más clasificaciones desfavorables, sin que estos resultados impliquen incapacidad funcional o laboral.</p>
+<p>En conjunto, los hallazgos muestran que las necesidades observadas trascienden variables aisladas. El <b>Índice de Carga de Riesgo (ICR)</b> confirma esta coexistencia: de los 122 colaboradores evaluados, el <b>87.7% —107 colaboradores—</b> acumuló tres o más variables afectadas, el <b>11.5% —14 colaboradores—</b> presentó una o dos variables afectadas y el <b>0.8% —1 colaborador—</b> obtuvo ICR = 0.</p>
 <p>Para BHD, esta jornada constituye un punto de partida para transformar la información obtenida en acciones concretas de prevención y acompañamiento. Los resultados permiten orientar iniciativas de educación nutricional, actividad física, movilidad, fortalecimiento, seguimiento cardiovascular y reevaluación periódica, priorizando los recursos de acuerdo con las necesidades identificadas.</p>
 <p style="margin-bottom:0">El objetivo no debe limitarse a modificar indicadores individuales, sino a establecer una estrategia sostenible que favorezca la salud y el bienestar de los colaboradores a lo largo del tiempo. La evaluación realizada representa una fotografía del momento y proporciona una línea de base desde la cual BHD y NUMED Care pueden medir evolución, identificar cambios y valorar el impacto de las acciones que se implementen posteriormente.</p>
 </div>
@@ -1548,20 +1549,21 @@ main{overflow:hidden} section{position:relative}
 <article class="recommendation-card"><span class="rec-num">03</span><h3>Suplementación personalizada</h3><p>Cuando corresponda, valorar de forma individual la necesidad de suplementación y definirla con criterio profesional, evitando esquemas generales y vinculándola a la evaluación clínica y nutricional de cada persona.</p></article>
 <article class="recommendation-card"><span class="rec-num">04</span><h3>Evaluación y reevaluación periódica</h3><p>Dar seguimiento a indicadores clínicos y funcionales y, cuando formen parte del alcance del programa, incorporar pruebas complementarias que permitan observar la evolución y ajustar las estrategias de acompañamiento.</p></article>
 </div>
-<div class="recommendation-close"><h3>Proyección institucional</h3><p>Asimismo, se sugiere valorar la posibilidad de extender este modelo de atención a otras empresas afiliadas como parte de la propuesta de valor de BHD. Un programa sostenible de prevención y seguimiento puede fortalecer el bienestar de los colaboradores y consolidar una estrategia institucional orientada a la prevención de enfermedades no transmisibles desde el entorno laboral.</p></div>
+<div class="recommendation-close"><h3>Proyección institucional</h3><p>Asimismo, se sugiere valorar la posibilidad de extender este modelo de atención a otras empresas afiliadas como parte de la propuesta de valor de la ARS. Un programa sostenible de prevención y seguimiento puede fortalecer el bienestar de los colaboradores y consolidar una estrategia institucional orientada a la prevención de enfermedades no transmisibles desde el entorno laboral.</p></div>
 </section>
 </main>
 <div class="footer">
    NUMED CARE · Reporte BHD · Agosto 2026
   </div>
+
 <script>
-function filterCollaborators(){
-  const q=(document.getElementById('collabSearch')?.value||'').toLowerCase().trim();
-  const state=document.getElementById('collabState')?.value||'';
-  document.querySelectorAll('#collabBody tr').forEach(row=>{
-    const name=(row.dataset.name||'').toLowerCase();
-    const rowState=row.dataset.state||'';
-    row.style.display=(!q||name.includes(q))&&(!state||rowState===state)?'':'none';
+function filterCollaborators() {
+  const search = (document.getElementById('collabSearch')?.value || '').toLowerCase().trim();
+  const state = document.getElementById('collabState')?.value || 'all';
+  document.querySelectorAll('tbody tr[data-name][data-state]').forEach((row) => {
+    const matchesSearch = (row.dataset.name || '').includes(search);
+    const matchesState = state === 'all' || row.dataset.state === state;
+    row.style.display = matchesSearch && matchesState ? '' : 'none';
   });
 }
 </script>
