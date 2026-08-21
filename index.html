@@ -148,6 +148,21 @@ main{overflow:hidden} section{position:relative}
 .footer{background:linear-gradient(110deg,#082b49,#0b466d);padding:34px}
 @media(max-width:900px){.functional-variable{grid-template-columns:1fr}.condition{padding:24px}.icr-kpis{grid-template-columns:1fr}.collab-controls{position:static}}
 @media print{.condition,.chart,.icr-kpi,.collab-table-wrap,.recommendation-card{box-shadow:none!important}.recommendation-card:hover{transform:none}.collab-controls{display:none!important}.icr-section,.recommendations-section{background:#fff!important}}
+
+/* ICR: encabezado principal con mayor presencia visual */
+.icr-section .section-head .eyebrow{
+  font-size:28px;
+  line-height:1.15;
+  letter-spacing:.11em;
+  padding:12px 18px;
+  white-space:nowrap;
+}
+@media(max-width:700px){
+  .icr-section .section-head .eyebrow{font-size:20px;white-space:normal;}
+}
+@media print{
+  .icr-section .section-head .eyebrow{font-size:24px;padding:10px 15px;}
+}
 </style>
 <style>
 /* Correccion final de graficos: escala absoluta 0-100%.
